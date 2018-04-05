@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\CadChavesBLL.cs" />
+    <Compile Include="BLL\CadItemBLL.cs" />
     <Compile Include="BLL\CadUsuariosBLL.cs" />
     <Compile Include="BLL\CadVeiculosBLL.cs" />
     <Compile Include="BLL\CheckListBLL.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Component\ResizeIMG.cs" />
     <Compile Include="Component\TextInput.cs" />
     <Compile Include="DAO\CadChavesDAO.cs" />
+    <Compile Include="DAO\CadItemDAO.cs" />
     <Compile Include="DAO\CadUsuariosDAO.cs" />
     <Compile Include="DAO\CadVeiculosDAO.cs" />
     <Compile Include="DAO\CheckListDAO.cs" />
@@ -88,6 +90,7 @@
     <Compile Include="Entity\Chave.cs" />
     <Compile Include="Entity\Check.cs" />
     <Compile Include="Entity\ConfiTxt.cs" />
+    <Compile Include="Entity\Item.cs" />
     <Compile Include="Entity\ManutencaoBD.cs" />
     <Compile Include="Entity\OleoBD.cs" />
     <Compile Include="Entity\Usuario.cs" />
@@ -103,6 +106,12 @@
     </Compile>
     <Compile Include="Interface\CadChaves.Designer.cs">
       <DependentUpon>CadChaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CadItens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CadItens.Designer.cs">
+      <DependentUpon>CadItens.cs</DependentUpon>
     </Compile>
     <Compile Include="Interface\CadUsuarios.cs">
       <SubType>Form</SubType>
@@ -267,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\CadChaves.resx">
       <DependentUpon>CadChaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CadItens.resx">
+      <DependentUpon>CadItens.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\CadUsuarios.resx">
       <DependentUpon>CadUsuarios.cs</DependentUpon>

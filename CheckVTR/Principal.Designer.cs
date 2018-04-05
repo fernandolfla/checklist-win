@@ -45,25 +45,28 @@
             this.txtVersao = new System.Windows.Forms.TextBox();
             this.txtSerial = new System.Windows.Forms.TextBox();
             this.btnCaixa = new System.Windows.Forms.Button();
+            this.btnItens = new System.Windows.Forms.Button();
             this.painelPrincipalRodape.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCheck
             // 
+            this.btnCheck.Enabled = false;
             this.btnCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheck.Location = new System.Drawing.Point(43, 32);
+            this.btnCheck.Location = new System.Drawing.Point(297, 412);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(130, 80);
             this.btnCheck.TabIndex = 0;
             this.btnCheck.Text = "Check List";
             this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Visible = false;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // btnConf
             // 
             this.btnConf.Enabled = false;
             this.btnConf.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConf.Location = new System.Drawing.Point(43, 285);
+            this.btnConf.Location = new System.Drawing.Point(544, 22);
             this.btnConf.Name = "btnConf";
             this.btnConf.Size = new System.Drawing.Size(130, 80);
             this.btnConf.TabIndex = 1;
@@ -110,7 +113,7 @@
             // btnOleo
             // 
             this.btnOleo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOleo.Location = new System.Drawing.Point(297, 32);
+            this.btnOleo.Location = new System.Drawing.Point(43, 22);
             this.btnOleo.Name = "btnOleo";
             this.btnOleo.Size = new System.Drawing.Size(130, 80);
             this.btnOleo.TabIndex = 5;
@@ -143,7 +146,7 @@
             // btnManutenção
             // 
             this.btnManutenção.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManutenção.Location = new System.Drawing.Point(544, 32);
+            this.btnManutenção.Location = new System.Drawing.Point(297, 22);
             this.btnManutenção.Name = "btnManutenção";
             this.btnManutenção.Size = new System.Drawing.Size(130, 80);
             this.btnManutenção.TabIndex = 8;
@@ -222,11 +225,23 @@
             this.btnCaixa.Visible = false;
             this.btnCaixa.Click += new System.EventHandler(this.btnCaixa_Click);
             // 
+            // btnItens
+            // 
+            this.btnItens.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItens.Location = new System.Drawing.Point(43, 285);
+            this.btnItens.Name = "btnItens";
+            this.btnItens.Size = new System.Drawing.Size(130, 80);
+            this.btnItens.TabIndex = 11;
+            this.btnItens.Text = "Cadastro de Itens de Checagem";
+            this.btnItens.UseVisualStyleBackColor = true;
+            this.btnItens.Click += new System.EventHandler(this.btnItens_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.btnItens);
             this.Controls.Add(this.btnCaixa);
             this.Controls.Add(this.painelPrincipalRodape);
             this.Controls.Add(this.btnManutenção);
@@ -270,6 +285,7 @@
         private System.Windows.Forms.TextBox txtVersao;
         private System.Windows.Forms.TextBox txtSerial;
         private System.Windows.Forms.Button btnCaixa;
+        private System.Windows.Forms.Button btnItens;
     }
 }
 

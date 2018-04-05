@@ -159,5 +159,12 @@ namespace CheckVTR
             else
                 MessageBox.Show("Somente Operadores podem Manusear Caixa, obrigado");
         }
+
+        private void btnItens_Click(object sender, EventArgs e)
+        {
+            CadItens caditens = new CadItens();
+            caditens.ShowDialog();
+
+        }
     }
 }
