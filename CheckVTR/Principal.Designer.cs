@@ -51,7 +51,6 @@
             // 
             // btnCheck
             // 
-            this.btnCheck.Enabled = false;
             this.btnCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheck.Location = new System.Drawing.Point(297, 412);
             this.btnCheck.Name = "btnCheck";
@@ -59,7 +58,6 @@
             this.btnCheck.TabIndex = 0;
             this.btnCheck.Text = "Check List";
             this.btnCheck.UseVisualStyleBackColor = true;
-            this.btnCheck.Visible = false;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // btnConf

@@ -69,21 +69,21 @@ namespace CheckVTR.Interface
                             {
                                 txtOleoVencido.Text = "Óleo Vencido!! -> " + kmvencido;
                                 txtOleoVencido.ForeColor = Color.Red;
-                                checkOleo.Checked = false;
-                                checkOleo.Enabled = false;
+                                check1.Checked = false;
+                                check1.Enabled = false;
                             }
                             else if(km < kmproxima && (kmproxima - km) <= 250){
                                 txtOleoVencido.Text = "Óleo Para Vencer! -> " + kmvencido;
                                 txtOleoVencido.ForeColor = Color.DarkRed;
-                                checkOleo.Checked = false;
-                                checkOleo.Enabled = false;
+                                check1.Checked = false;
+                                check1.Enabled = false;
                             }
                             else
                             {
                                 txtOleoVencido.Text = "Próx Troca de Óleo -> " + kmproxima;
                                 txtOleoVencido.ForeColor = Color.Black;
-                                checkOleo.Checked = true;
-                                checkOleo.Enabled = true;
+                                check1.Checked = true;
+                                check1.Enabled = true;
                             }
                         }                         
                     }
@@ -113,72 +113,6 @@ namespace CheckVTR.Interface
             c.Obs = txtObs.Text;
             if (string.IsNullOrEmpty(c.Obs))
                 c.Obs = "Plantão S.A.";
-
-            if (checkOleo.Checked)
-                c.Oleo = 1;
-            else
-                c.Oleo = 0;
-
-            if (checkCombustivel.Checked)
-                c.Combustivel = 1;
-            else
-                c.Combustivel = 0;
-
-            if (checkP90.Checked)
-                c.P90 = 1;
-            else
-                c.P90 = 0;
-
-            if (checkRetrovisores.Checked)
-                c.Retrovisores = 1;
-            else
-                c.Retrovisores = 0;
-
-            if (checkFarois.Checked)
-                c.Farois = 1;
-            else
-                c.Farois = 0;
-
-            if (checkFerramentas.Checked)
-                c.Ferramentas = 1;
-            else
-                c.Ferramentas = 0;
-
-            if (checkPneu.Checked)
-                c.Pneu = 1;
-            else
-                c.Pneu = 0;
-
-            if (checkLanternas.Checked)
-                c.Lanternas = 1;
-            else
-                c.Lanternas = 0;
-
-            if (checkDocumento.Checked)
-                c.Documento = 1;
-            else
-                c.Documento = 0;
-
-            if (checkChave.Checked)
-                c.Chave = 1;
-            else
-                c.Chave = 0;
-
-            if (checkGPS.Checked)
-                c.suporte = 1;
-            else
-                c.suporte = 0;
-
-            if (checkCarregador.Checked)
-                c.carregador = 1;
-            else
-                c.carregador = 0;
-
-            if (checkPintura.Checked)
-                c.Pintura = 1;
-            else
-                c.Pintura = 0;
-
 
             return c;
         }

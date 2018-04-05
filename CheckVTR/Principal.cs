@@ -78,20 +78,20 @@ namespace CheckVTR
         private void btnCheck_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show("SOMENTE PELO APP ANDROID ");
-            //if(Autenticacao.GetSituacaoUsuario() == 0)
-            //{
-            //    CheckList Tela = new CheckList();
-            //    Tela.ShowDialog();
-            //}
-            //else
-            //{
-            //    CheckListFinalizar Tela = new CheckListFinalizar();
-            //    Tela.ShowDialog();
-            //}
+            // MessageBox.Show("SOMENTE PELO APP ANDROID ");
+            if (Autenticacao.GetSituacaoUsuario() == 0)
+            {
+                CheckList Tela = new CheckList();
+                Tela.ShowDialog();
+            }
+            else
+            {
+                CheckListFinalizar Tela = new CheckListFinalizar();
+                Tela.ShowDialog();
+            }
 
 
-            
+
         }
 
         private void btnTatico_Click(object sender, EventArgs e)

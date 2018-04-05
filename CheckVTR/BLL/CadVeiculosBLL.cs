@@ -111,6 +111,24 @@ namespace CheckVTR.BLL
         }
 
 
+        public bool Apaga(string placa)
+        {
+
+            CadVeiculosDAO DAO = new CadVeiculosDAO();
+            if (!string.IsNullOrEmpty(placa))
+            {
+
+                DataTable Result = new DataTable();
+
+                Result = DAO.Apaga(placa,Autenticacao.GetCodUsuario());
+                if (Result != null)
+                    if (Result.Rows.Count > 0)
+                        if (Result.Rows[0].ItemArray[0].ToString().Equals("1"))
+                            return true;
+            }
+            return false;
+        }
+
         private Veiculo DataToUsuario(DataTable data, Veiculo c)
         {
 
@@ -124,6 +142,9 @@ namespace CheckVTR.BLL
 
             return c;
         }
+
+
+
 
 
 

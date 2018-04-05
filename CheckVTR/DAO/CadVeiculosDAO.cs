@@ -133,6 +133,41 @@ namespace CheckVTR.DAO
             return null;
         }
 
+        public DataTable Apaga(string placa, int usuario)
+        {
+            try
+            {
+                CriarConexao();
+                Abrir();
+
+                SqlDataAdapter Cmd = new SqlDataAdapter("SP_ApagaVeiculo", con);
+
+                Cmd.SelectCommand.CommandType = System.Data.CommandType.StoredProcedure;
+
+                Cmd.SelectCommand.Parameters.Add("@USUARIO", SqlDbType.VarChar).Value = usuario;
+                Cmd.SelectCommand.Parameters.Add("@PLACA", SqlDbType.VarChar).Value = placa;
+                DataTable data = new DataTable();
+                Cmd.Fill(data);
+                Fechar();
+                return data;
+
+            }
+            catch (Exception e)
+            {
+                Erros.SetErroBanco(e);
+                Erros.SetHaErro(true);
+            }
+            finally
+            {
+                Fechar();
+            }
+            return null;
+        }
+
+
+        
+
+
 
     }
 }

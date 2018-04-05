@@ -60,19 +60,6 @@ namespace CheckVTR.DAO
                 Cmd.SelectCommand.Parameters.Add("@AREA", SqlDbType.VarChar).Value = c.Area;
                 Cmd.SelectCommand.Parameters.Add("@PLACA", SqlDbType.VarChar).Value = c.Placa;
                 Cmd.SelectCommand.Parameters.Add("@KMINICIAL", SqlDbType.VarChar).Value = c.KmInicial;
-                Cmd.SelectCommand.Parameters.Add("@OLEO", SqlDbType.VarChar).Value = c.Oleo;
-                Cmd.SelectCommand.Parameters.Add("@COMBUSTIVEL", SqlDbType.VarChar).Value = c.Combustivel;
-                Cmd.SelectCommand.Parameters.Add("@P90", SqlDbType.VarChar).Value = c.P90;
-                Cmd.SelectCommand.Parameters.Add("@RETROVISORES", SqlDbType.VarChar).Value = c.Retrovisores;
-                Cmd.SelectCommand.Parameters.Add("@FAROIS", SqlDbType.VarChar).Value = c.Farois;
-                Cmd.SelectCommand.Parameters.Add("@FERRAMENTAS", SqlDbType.VarChar).Value = c.Ferramentas;
-                Cmd.SelectCommand.Parameters.Add("@PNEU", SqlDbType.VarChar).Value = c.Pneu;
-                Cmd.SelectCommand.Parameters.Add("@LANTERNAS", SqlDbType.VarChar).Value = c.Lanternas;
-                Cmd.SelectCommand.Parameters.Add("@PINTURA", SqlDbType.VarChar).Value = c.Pintura;
-                Cmd.SelectCommand.Parameters.Add("@DOCUMENTO", SqlDbType.VarChar).Value = c.Documento;
-                Cmd.SelectCommand.Parameters.Add("@CHAVE", SqlDbType.VarChar).Value = c.Chave;
-                Cmd.SelectCommand.Parameters.Add("@SUPORTE", SqlDbType.VarChar).Value = c.suporte;
-                Cmd.SelectCommand.Parameters.Add("@CARREGADOR", SqlDbType.VarChar).Value = c.carregador;
                 Cmd.SelectCommand.Parameters.Add("@OBS", SqlDbType.NText).Value = c.Obs;
 
                 DataTable data = new DataTable();

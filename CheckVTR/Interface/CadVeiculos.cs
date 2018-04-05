@@ -126,5 +126,26 @@ namespace CheckVTR.Interface
             else MessageBox.Show("Erro ao Buscar, Reinicie o Programa, se Persistir entre em contato com o Suporte");
             MensagemErro();
         }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+
+            DialogResult Result = MessageBox.Show("Realmente deseja Excluir? A Exclusão pode ocasionar inconsistencia no Banco de Dados! ", "Importante", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (Result == DialogResult.Yes)
+            {
+                CadVeiculosBLL BLL = new CadVeiculosBLL();
+                Veiculo c = new Veiculo();
+                c = TelaToEntity();
+                if (BLL.Apaga(c.Placa))
+                {
+                    MessageBox.Show("Deletado com Sucesso");
+                }
+                else MessageBox.Show("O Veiculo não poderá ser excluido, ou Selecione um cliente Válido!");
+
+                LimpaTela();
+                MensagemErro();
+
+            }
+        }
     }
 }

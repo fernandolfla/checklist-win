@@ -34,19 +34,19 @@
             this.txtKmInicial = new System.Windows.Forms.MaskedTextBox();
             this.txtObs = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.checkCarregador = new System.Windows.Forms.CheckBox();
-            this.checkGPS = new System.Windows.Forms.CheckBox();
-            this.checkChave = new System.Windows.Forms.CheckBox();
-            this.checkDocumento = new System.Windows.Forms.CheckBox();
-            this.checkPintura = new System.Windows.Forms.CheckBox();
-            this.checkLanternas = new System.Windows.Forms.CheckBox();
-            this.checkPneu = new System.Windows.Forms.CheckBox();
-            this.checkFerramentas = new System.Windows.Forms.CheckBox();
-            this.checkFarois = new System.Windows.Forms.CheckBox();
-            this.checkRetrovisores = new System.Windows.Forms.CheckBox();
-            this.checkP90 = new System.Windows.Forms.CheckBox();
-            this.checkCombustivel = new System.Windows.Forms.CheckBox();
-            this.checkOleo = new System.Windows.Forms.CheckBox();
+            this.check22 = new System.Windows.Forms.CheckBox();
+            this.check21 = new System.Windows.Forms.CheckBox();
+            this.check20 = new System.Windows.Forms.CheckBox();
+            this.check19 = new System.Windows.Forms.CheckBox();
+            this.check9 = new System.Windows.Forms.CheckBox();
+            this.check8 = new System.Windows.Forms.CheckBox();
+            this.check7 = new System.Windows.Forms.CheckBox();
+            this.check6 = new System.Windows.Forms.CheckBox();
+            this.check5 = new System.Windows.Forms.CheckBox();
+            this.check4 = new System.Windows.Forms.CheckBox();
+            this.check3 = new System.Windows.Forms.CheckBox();
+            this.check2 = new System.Windows.Forms.CheckBox();
+            this.check1 = new System.Windows.Forms.CheckBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnProximo = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,29 +58,47 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtTatico = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.check18 = new System.Windows.Forms.CheckBox();
+            this.check17 = new System.Windows.Forms.CheckBox();
+            this.check16 = new System.Windows.Forms.CheckBox();
+            this.check15 = new System.Windows.Forms.CheckBox();
+            this.check14 = new System.Windows.Forms.CheckBox();
+            this.check13 = new System.Windows.Forms.CheckBox();
+            this.check12 = new System.Windows.Forms.CheckBox();
+            this.check11 = new System.Windows.Forms.CheckBox();
+            this.check10 = new System.Windows.Forms.CheckBox();
             this.panelFundo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelFundo
             // 
             this.panelFundo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelFundo.Controls.Add(this.check18);
+            this.panelFundo.Controls.Add(this.check17);
+            this.panelFundo.Controls.Add(this.check16);
+            this.panelFundo.Controls.Add(this.check15);
+            this.panelFundo.Controls.Add(this.check14);
+            this.panelFundo.Controls.Add(this.check13);
+            this.panelFundo.Controls.Add(this.check12);
+            this.panelFundo.Controls.Add(this.check11);
+            this.panelFundo.Controls.Add(this.check10);
             this.panelFundo.Controls.Add(this.txtOleoVencido);
             this.panelFundo.Controls.Add(this.txtKmInicial);
             this.panelFundo.Controls.Add(this.txtObs);
             this.panelFundo.Controls.Add(this.label6);
-            this.panelFundo.Controls.Add(this.checkCarregador);
-            this.panelFundo.Controls.Add(this.checkGPS);
-            this.panelFundo.Controls.Add(this.checkChave);
-            this.panelFundo.Controls.Add(this.checkDocumento);
-            this.panelFundo.Controls.Add(this.checkPintura);
-            this.panelFundo.Controls.Add(this.checkLanternas);
-            this.panelFundo.Controls.Add(this.checkPneu);
-            this.panelFundo.Controls.Add(this.checkFerramentas);
-            this.panelFundo.Controls.Add(this.checkFarois);
-            this.panelFundo.Controls.Add(this.checkRetrovisores);
-            this.panelFundo.Controls.Add(this.checkP90);
-            this.panelFundo.Controls.Add(this.checkCombustivel);
-            this.panelFundo.Controls.Add(this.checkOleo);
+            this.panelFundo.Controls.Add(this.check22);
+            this.panelFundo.Controls.Add(this.check21);
+            this.panelFundo.Controls.Add(this.check20);
+            this.panelFundo.Controls.Add(this.check19);
+            this.panelFundo.Controls.Add(this.check9);
+            this.panelFundo.Controls.Add(this.check8);
+            this.panelFundo.Controls.Add(this.check7);
+            this.panelFundo.Controls.Add(this.check6);
+            this.panelFundo.Controls.Add(this.check5);
+            this.panelFundo.Controls.Add(this.check4);
+            this.panelFundo.Controls.Add(this.check3);
+            this.panelFundo.Controls.Add(this.check2);
+            this.panelFundo.Controls.Add(this.check1);
             this.panelFundo.Controls.Add(this.btnCancelar);
             this.panelFundo.Controls.Add(this.btnProximo);
             this.panelFundo.Controls.Add(this.label5);
@@ -94,7 +112,7 @@
             this.panelFundo.Controls.Add(this.label1);
             this.panelFundo.Location = new System.Drawing.Point(12, 12);
             this.panelFundo.Name = "panelFundo";
-            this.panelFundo.Size = new System.Drawing.Size(760, 538);
+            this.panelFundo.Size = new System.Drawing.Size(960, 538);
             this.panelFundo.TabIndex = 0;
             // 
             // txtOleoVencido
@@ -121,7 +139,7 @@
             // txtObs
             // 
             this.txtObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObs.Location = new System.Drawing.Point(567, 323);
+            this.txtObs.Location = new System.Drawing.Point(767, 333);
             this.txtObs.MaxLength = 1000;
             this.txtObs.Multiline = true;
             this.txtObs.Name = "txtObs";
@@ -133,156 +151,167 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(638, 296);
+            this.label6.Location = new System.Drawing.Point(763, 302);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 24);
             this.label6.TabIndex = 25;
             this.label6.Text = "OBS.";
             // 
-            // checkCarregador
+            // check22
             // 
-            this.checkCarregador.AutoSize = true;
-            this.checkCarregador.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkCarregador.Location = new System.Drawing.Point(609, 190);
-            this.checkCarregador.Name = "checkCarregador";
-            this.checkCarregador.Size = new System.Drawing.Size(124, 28);
-            this.checkCarregador.TabIndex = 18;
-            this.checkCarregador.Text = "Carregador";
-            this.checkCarregador.UseVisualStyleBackColor = true;
-            this.checkCarregador.Visible = false;
+            this.check22.AutoSize = true;
+            this.check22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check22.Location = new System.Drawing.Point(807, 190);
+            this.check22.Name = "check22";
+            this.check22.Size = new System.Drawing.Size(83, 28);
+            this.check22.TabIndex = 18;
+            this.check22.Text = "Check";
+            this.check22.UseVisualStyleBackColor = true;
+            this.check22.Visible = false;
             // 
-            // checkGPS
+            // check21
             // 
-            this.checkGPS.AutoSize = true;
-            this.checkGPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkGPS.Location = new System.Drawing.Point(609, 138);
-            this.checkGPS.Name = "checkGPS";
-            this.checkGPS.Size = new System.Drawing.Size(138, 28);
-            this.checkGPS.TabIndex = 17;
-            this.checkGPS.Text = "Suporte GPS";
-            this.checkGPS.UseVisualStyleBackColor = true;
-            this.checkGPS.Visible = false;
+            this.check21.AutoSize = true;
+            this.check21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check21.Location = new System.Drawing.Point(807, 138);
+            this.check21.Name = "check21";
+            this.check21.Size = new System.Drawing.Size(83, 28);
+            this.check21.TabIndex = 17;
+            this.check21.Text = "Check";
+            this.check21.UseVisualStyleBackColor = true;
+            this.check21.Visible = false;
             // 
-            // checkChave
+            // check20
             // 
-            this.checkChave.AutoSize = true;
-            this.checkChave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkChave.Location = new System.Drawing.Point(609, 79);
-            this.checkChave.Name = "checkChave";
-            this.checkChave.Size = new System.Drawing.Size(83, 28);
-            this.checkChave.TabIndex = 16;
-            this.checkChave.Text = "Chave";
-            this.checkChave.UseVisualStyleBackColor = true;
+            this.check20.AutoSize = true;
+            this.check20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check20.Location = new System.Drawing.Point(807, 79);
+            this.check20.Name = "check20";
+            this.check20.Size = new System.Drawing.Size(83, 28);
+            this.check20.TabIndex = 16;
+            this.check20.Text = "Check";
+            this.check20.UseVisualStyleBackColor = true;
+            this.check20.Visible = false;
             // 
-            // checkDocumento
+            // check19
             // 
-            this.checkDocumento.AutoSize = true;
-            this.checkDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkDocumento.Location = new System.Drawing.Point(609, 25);
-            this.checkDocumento.Name = "checkDocumento";
-            this.checkDocumento.Size = new System.Drawing.Size(127, 28);
-            this.checkDocumento.TabIndex = 15;
-            this.checkDocumento.Text = "Documento";
-            this.checkDocumento.UseVisualStyleBackColor = true;
+            this.check19.AutoSize = true;
+            this.check19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check19.Location = new System.Drawing.Point(807, 25);
+            this.check19.Name = "check19";
+            this.check19.Size = new System.Drawing.Size(83, 28);
+            this.check19.TabIndex = 15;
+            this.check19.Text = "Check";
+            this.check19.UseVisualStyleBackColor = true;
+            this.check19.Visible = false;
             // 
-            // checkPintura
+            // check9
             // 
-            this.checkPintura.AutoSize = true;
-            this.checkPintura.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkPintura.Location = new System.Drawing.Point(420, 470);
-            this.checkPintura.Name = "checkPintura";
-            this.checkPintura.Size = new System.Drawing.Size(87, 28);
-            this.checkPintura.TabIndex = 14;
-            this.checkPintura.Text = "Pintura";
-            this.checkPintura.UseVisualStyleBackColor = true;
+            this.check9.AutoSize = true;
+            this.check9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check9.Location = new System.Drawing.Point(420, 470);
+            this.check9.Name = "check9";
+            this.check9.Size = new System.Drawing.Size(83, 28);
+            this.check9.TabIndex = 14;
+            this.check9.Text = "Check";
+            this.check9.UseVisualStyleBackColor = true;
+            this.check9.Visible = false;
             // 
-            // checkLanternas
+            // check8
             // 
-            this.checkLanternas.AutoSize = true;
-            this.checkLanternas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkLanternas.Location = new System.Drawing.Point(420, 411);
-            this.checkLanternas.Name = "checkLanternas";
-            this.checkLanternas.Size = new System.Drawing.Size(111, 28);
-            this.checkLanternas.TabIndex = 13;
-            this.checkLanternas.Text = "Lanternas";
-            this.checkLanternas.UseVisualStyleBackColor = true;
+            this.check8.AutoSize = true;
+            this.check8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check8.Location = new System.Drawing.Point(420, 411);
+            this.check8.Name = "check8";
+            this.check8.Size = new System.Drawing.Size(83, 28);
+            this.check8.TabIndex = 13;
+            this.check8.Text = "Check";
+            this.check8.UseVisualStyleBackColor = true;
+            this.check8.Visible = false;
             // 
-            // checkPneu
+            // check7
             // 
-            this.checkPneu.AutoSize = true;
-            this.checkPneu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkPneu.Location = new System.Drawing.Point(420, 357);
-            this.checkPneu.Name = "checkPneu";
-            this.checkPneu.Size = new System.Drawing.Size(74, 28);
-            this.checkPneu.TabIndex = 12;
-            this.checkPneu.Text = "Pneu";
-            this.checkPneu.UseVisualStyleBackColor = true;
+            this.check7.AutoSize = true;
+            this.check7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check7.Location = new System.Drawing.Point(420, 357);
+            this.check7.Name = "check7";
+            this.check7.Size = new System.Drawing.Size(83, 28);
+            this.check7.TabIndex = 12;
+            this.check7.Text = "Check";
+            this.check7.UseVisualStyleBackColor = true;
+            this.check7.Visible = false;
             // 
-            // checkFerramentas
+            // check6
             // 
-            this.checkFerramentas.AutoSize = true;
-            this.checkFerramentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkFerramentas.Location = new System.Drawing.Point(420, 302);
-            this.checkFerramentas.Name = "checkFerramentas";
-            this.checkFerramentas.Size = new System.Drawing.Size(135, 28);
-            this.checkFerramentas.TabIndex = 11;
-            this.checkFerramentas.Text = "Ferramentas";
-            this.checkFerramentas.UseVisualStyleBackColor = true;
+            this.check6.AutoSize = true;
+            this.check6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check6.Location = new System.Drawing.Point(420, 302);
+            this.check6.Name = "check6";
+            this.check6.Size = new System.Drawing.Size(83, 28);
+            this.check6.TabIndex = 11;
+            this.check6.Text = "Check";
+            this.check6.UseVisualStyleBackColor = true;
+            this.check6.Visible = false;
             // 
-            // checkFarois
+            // check5
             // 
-            this.checkFarois.AutoSize = true;
-            this.checkFarois.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkFarois.Location = new System.Drawing.Point(420, 246);
-            this.checkFarois.Name = "checkFarois";
-            this.checkFarois.Size = new System.Drawing.Size(81, 28);
-            this.checkFarois.TabIndex = 10;
-            this.checkFarois.Text = "Faróis";
-            this.checkFarois.UseVisualStyleBackColor = true;
+            this.check5.AutoSize = true;
+            this.check5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check5.Location = new System.Drawing.Point(420, 246);
+            this.check5.Name = "check5";
+            this.check5.Size = new System.Drawing.Size(83, 28);
+            this.check5.TabIndex = 10;
+            this.check5.Text = "Check";
+            this.check5.UseVisualStyleBackColor = true;
+            this.check5.Visible = false;
             // 
-            // checkRetrovisores
+            // check4
             // 
-            this.checkRetrovisores.AutoSize = true;
-            this.checkRetrovisores.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkRetrovisores.Location = new System.Drawing.Point(420, 190);
-            this.checkRetrovisores.Name = "checkRetrovisores";
-            this.checkRetrovisores.Size = new System.Drawing.Size(133, 28);
-            this.checkRetrovisores.TabIndex = 9;
-            this.checkRetrovisores.Text = "Retrovisores";
-            this.checkRetrovisores.UseVisualStyleBackColor = true;
+            this.check4.AutoSize = true;
+            this.check4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check4.Location = new System.Drawing.Point(420, 190);
+            this.check4.Name = "check4";
+            this.check4.Size = new System.Drawing.Size(83, 28);
+            this.check4.TabIndex = 9;
+            this.check4.Text = "Check";
+            this.check4.UseVisualStyleBackColor = true;
+            this.check4.Visible = false;
             // 
-            // checkP90
+            // check3
             // 
-            this.checkP90.AutoSize = true;
-            this.checkP90.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkP90.Location = new System.Drawing.Point(420, 138);
-            this.checkP90.Name = "checkP90";
-            this.checkP90.Size = new System.Drawing.Size(61, 28);
-            this.checkP90.TabIndex = 8;
-            this.checkP90.Text = "P90";
-            this.checkP90.UseVisualStyleBackColor = true;
+            this.check3.AutoSize = true;
+            this.check3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check3.Location = new System.Drawing.Point(420, 138);
+            this.check3.Name = "check3";
+            this.check3.Size = new System.Drawing.Size(83, 28);
+            this.check3.TabIndex = 8;
+            this.check3.Text = "Check";
+            this.check3.UseVisualStyleBackColor = true;
+            this.check3.Visible = false;
             // 
-            // checkCombustivel
+            // check2
             // 
-            this.checkCombustivel.AutoSize = true;
-            this.checkCombustivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkCombustivel.Location = new System.Drawing.Point(420, 79);
-            this.checkCombustivel.Name = "checkCombustivel";
-            this.checkCombustivel.Size = new System.Drawing.Size(132, 28);
-            this.checkCombustivel.TabIndex = 7;
-            this.checkCombustivel.Text = "Combustível";
-            this.checkCombustivel.UseVisualStyleBackColor = true;
+            this.check2.AutoSize = true;
+            this.check2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check2.Location = new System.Drawing.Point(420, 79);
+            this.check2.Name = "check2";
+            this.check2.Size = new System.Drawing.Size(83, 28);
+            this.check2.TabIndex = 7;
+            this.check2.Text = "Check";
+            this.check2.UseVisualStyleBackColor = true;
+            this.check2.Visible = false;
             // 
-            // checkOleo
+            // check1
             // 
-            this.checkOleo.AutoSize = true;
-            this.checkOleo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkOleo.Location = new System.Drawing.Point(420, 25);
-            this.checkOleo.Name = "checkOleo";
-            this.checkOleo.Size = new System.Drawing.Size(70, 28);
-            this.checkOleo.TabIndex = 6;
-            this.checkOleo.Text = "Óleo";
-            this.checkOleo.UseVisualStyleBackColor = true;
+            this.check1.AutoSize = true;
+            this.check1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check1.Location = new System.Drawing.Point(420, 25);
+            this.check1.Name = "check1";
+            this.check1.Size = new System.Drawing.Size(83, 28);
+            this.check1.TabIndex = 6;
+            this.check1.Text = "Check";
+            this.check1.UseVisualStyleBackColor = true;
+            this.check1.Visible = false;
             // 
             // btnCancelar
             // 
@@ -366,7 +395,8 @@
             this.comboArea.FormattingEnabled = true;
             this.comboArea.Items.AddRange(new object[] {
             "1",
-            "2"});
+            "2",
+            "3"});
             this.comboArea.Location = new System.Drawing.Point(130, 80);
             this.comboArea.Name = "comboArea";
             this.comboArea.Size = new System.Drawing.Size(148, 32);
@@ -401,17 +431,125 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tático";
             // 
+            // check18
+            // 
+            this.check18.AutoSize = true;
+            this.check18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check18.Location = new System.Drawing.Point(602, 470);
+            this.check18.Name = "check18";
+            this.check18.Size = new System.Drawing.Size(83, 28);
+            this.check18.TabIndex = 37;
+            this.check18.Text = "Check";
+            this.check18.UseVisualStyleBackColor = true;
+            this.check18.Visible = false;
+            // 
+            // check17
+            // 
+            this.check17.AutoSize = true;
+            this.check17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check17.Location = new System.Drawing.Point(602, 411);
+            this.check17.Name = "check17";
+            this.check17.Size = new System.Drawing.Size(83, 28);
+            this.check17.TabIndex = 36;
+            this.check17.Text = "Check";
+            this.check17.UseVisualStyleBackColor = true;
+            this.check17.Visible = false;
+            // 
+            // check16
+            // 
+            this.check16.AutoSize = true;
+            this.check16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check16.Location = new System.Drawing.Point(602, 357);
+            this.check16.Name = "check16";
+            this.check16.Size = new System.Drawing.Size(83, 28);
+            this.check16.TabIndex = 35;
+            this.check16.Text = "Check";
+            this.check16.UseVisualStyleBackColor = true;
+            this.check16.Visible = false;
+            // 
+            // check15
+            // 
+            this.check15.AutoSize = true;
+            this.check15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check15.Location = new System.Drawing.Point(602, 302);
+            this.check15.Name = "check15";
+            this.check15.Size = new System.Drawing.Size(83, 28);
+            this.check15.TabIndex = 34;
+            this.check15.Text = "Check";
+            this.check15.UseVisualStyleBackColor = true;
+            this.check15.Visible = false;
+            // 
+            // check14
+            // 
+            this.check14.AutoSize = true;
+            this.check14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check14.Location = new System.Drawing.Point(602, 246);
+            this.check14.Name = "check14";
+            this.check14.Size = new System.Drawing.Size(83, 28);
+            this.check14.TabIndex = 33;
+            this.check14.Text = "Check";
+            this.check14.UseVisualStyleBackColor = true;
+            this.check14.Visible = false;
+            // 
+            // check13
+            // 
+            this.check13.AutoSize = true;
+            this.check13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check13.Location = new System.Drawing.Point(602, 190);
+            this.check13.Name = "check13";
+            this.check13.Size = new System.Drawing.Size(83, 28);
+            this.check13.TabIndex = 32;
+            this.check13.Text = "Check";
+            this.check13.UseVisualStyleBackColor = true;
+            this.check13.Visible = false;
+            // 
+            // check12
+            // 
+            this.check12.AutoSize = true;
+            this.check12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check12.Location = new System.Drawing.Point(602, 138);
+            this.check12.Name = "check12";
+            this.check12.Size = new System.Drawing.Size(83, 28);
+            this.check12.TabIndex = 31;
+            this.check12.Text = "Check";
+            this.check12.UseVisualStyleBackColor = true;
+            this.check12.Visible = false;
+            // 
+            // check11
+            // 
+            this.check11.AutoSize = true;
+            this.check11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check11.Location = new System.Drawing.Point(602, 79);
+            this.check11.Name = "check11";
+            this.check11.Size = new System.Drawing.Size(83, 28);
+            this.check11.TabIndex = 30;
+            this.check11.Text = "Check";
+            this.check11.UseVisualStyleBackColor = true;
+            this.check11.Visible = false;
+            // 
+            // check10
+            // 
+            this.check10.AutoSize = true;
+            this.check10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check10.Location = new System.Drawing.Point(602, 25);
+            this.check10.Name = "check10";
+            this.check10.Size = new System.Drawing.Size(83, 28);
+            this.check10.TabIndex = 29;
+            this.check10.Text = "Check";
+            this.check10.UseVisualStyleBackColor = true;
+            this.check10.Visible = false;
+            // 
             // CheckList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.panelFundo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(800, 600);
+            this.MaximumSize = new System.Drawing.Size(1000, 600);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.MinimumSize = new System.Drawing.Size(1000, 600);
             this.Name = "CheckList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CheckList";
@@ -434,23 +572,32 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnProximo;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.CheckBox checkOleo;
-        private System.Windows.Forms.CheckBox checkPneu;
-        private System.Windows.Forms.CheckBox checkFerramentas;
-        private System.Windows.Forms.CheckBox checkFarois;
-        private System.Windows.Forms.CheckBox checkRetrovisores;
-        private System.Windows.Forms.CheckBox checkP90;
-        private System.Windows.Forms.CheckBox checkCombustivel;
-        private System.Windows.Forms.CheckBox checkLanternas;
-        private System.Windows.Forms.CheckBox checkChave;
-        private System.Windows.Forms.CheckBox checkDocumento;
-        private System.Windows.Forms.CheckBox checkPintura;
-        private System.Windows.Forms.CheckBox checkGPS;
-        private System.Windows.Forms.CheckBox checkCarregador;
+        private System.Windows.Forms.CheckBox check1;
+        private System.Windows.Forms.CheckBox check7;
+        private System.Windows.Forms.CheckBox check6;
+        private System.Windows.Forms.CheckBox check5;
+        private System.Windows.Forms.CheckBox check4;
+        private System.Windows.Forms.CheckBox check3;
+        private System.Windows.Forms.CheckBox check2;
+        private System.Windows.Forms.CheckBox check8;
+        private System.Windows.Forms.CheckBox check20;
+        private System.Windows.Forms.CheckBox check19;
+        private System.Windows.Forms.CheckBox check9;
+        private System.Windows.Forms.CheckBox check21;
+        private System.Windows.Forms.CheckBox check22;
         private System.Windows.Forms.TextBox txtObs;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.MaskedTextBox txtKmInicial;
         private System.Windows.Forms.TextBox txtOleoVencido;
         public System.Windows.Forms.ComboBox comboArea;
+        private System.Windows.Forms.CheckBox check18;
+        private System.Windows.Forms.CheckBox check17;
+        private System.Windows.Forms.CheckBox check16;
+        private System.Windows.Forms.CheckBox check15;
+        private System.Windows.Forms.CheckBox check14;
+        private System.Windows.Forms.CheckBox check13;
+        private System.Windows.Forms.CheckBox check12;
+        private System.Windows.Forms.CheckBox check11;
+        private System.Windows.Forms.CheckBox check10;
     }
 }

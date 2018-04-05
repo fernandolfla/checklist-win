@@ -49,6 +49,7 @@
             this.txtTrocaPadrao = new System.Windows.Forms.MaskedTextBox();
             this.txtProxTroca = new System.Windows.Forms.MaskedTextBox();
             this.txtUltimaTroca = new System.Windows.Forms.MaskedTextBox();
+            this.btnApagar = new System.Windows.Forms.Button();
             this.panelRodape.SuspendLayout();
             this.panelFundo.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +57,7 @@
             // panelRodape
             // 
             this.panelRodape.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelRodape.Controls.Add(this.btnApagar);
             this.panelRodape.Controls.Add(this.btnSalvar);
             this.panelRodape.Controls.Add(this.btnProximo);
             this.panelRodape.Controls.Add(this.label27);
@@ -260,6 +262,16 @@
             this.txtUltimaTroca.Size = new System.Drawing.Size(128, 29);
             this.txtUltimaTroca.TabIndex = 3;
             // 
+            // btnApagar
+            // 
+            this.btnApagar.Location = new System.Drawing.Point(238, 11);
+            this.btnApagar.Name = "btnApagar";
+            this.btnApagar.Size = new System.Drawing.Size(80, 25);
+            this.btnApagar.TabIndex = 16;
+            this.btnApagar.Text = "Apagar";
+            this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
+            // 
             // CadVeiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -303,5 +315,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Button btnApagar;
     }
 }
