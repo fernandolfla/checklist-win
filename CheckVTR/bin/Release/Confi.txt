@@ -1,0 +1,4 @@
+localhost
+SQLEXPRESS
+sa
+masterkey

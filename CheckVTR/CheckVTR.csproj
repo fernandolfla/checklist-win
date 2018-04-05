@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5DAEEC07-374E-45D0-9893-90AF136722DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CheckVTR</RootNamespace>
+    <AssemblyName>CheckVTR</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>red mark.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\CadChavesBLL.cs" />
+    <Compile Include="BLL\CadUsuariosBLL.cs" />
+    <Compile Include="BLL\CadVeiculosBLL.cs" />
+    <Compile Include="BLL\CheckListBLL.cs" />
+    <Compile Include="BLL\ConfiguracoesBLL.cs" />
+    <Compile Include="BLL\LoginBLL.cs" />
+    <Compile Include="BLL\ManutencaoBLL.cs" />
+    <Compile Include="BLL\MovimentoBLL.cs" />
+    <Compile Include="BLL\OleoBLL.cs" />
+    <Compile Include="BLL\RelatoriosBLL.cs" />
+    <Compile Include="Component\Crypto.cs" />
+    <Compile Include="Component\Erros.cs" />
+    <Compile Include="Component\LerArquivo.cs" />
+    <Compile Include="Component\ResizeIMG.cs" />
+    <Compile Include="Component\TextInput.cs" />
+    <Compile Include="DAO\CadChavesDAO.cs" />
+    <Compile Include="DAO\CadUsuariosDAO.cs" />
+    <Compile Include="DAO\CadVeiculosDAO.cs" />
+    <Compile Include="DAO\CheckListDAO.cs" />
+    <Compile Include="DAO\ConfiguracoesDAO.cs" />
+    <Compile Include="DAO\Connection.cs" />
+    <Compile Include="DAO\LoginDAO.cs" />
+    <Compile Include="DAO\ManutencaoDAO.cs" />
+    <Compile Include="DAO\MovimentoDAO.cs" />
+    <Compile Include="DAO\OleoDAO.cs" />
+    <Compile Include="DAO\RelatoriosDAO.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Caixa_Movimento.cs" />
+    <Compile Include="Entity\Caixa_Situacao.cs" />
+    <Compile Include="Entity\Chave.cs" />
+    <Compile Include="Entity\Check.cs" />
+    <Compile Include="Entity\ConfiTxt.cs" />
+    <Compile Include="Entity\ManutencaoBD.cs" />
+    <Compile Include="Entity\OleoBD.cs" />
+    <Compile Include="Entity\Usuario.cs" />
+    <Compile Include="Entity\Veiculo.cs" />
+    <Compile Include="Interface\Avisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Avisos.Designer.cs">
+      <DependentUpon>Avisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CadChaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CadChaves.Designer.cs">
+      <DependentUpon>CadChaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CadUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CadUsuarios.Designer.cs">
+      <DependentUpon>CadUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CadVeiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CadVeiculos.Designer.cs">
+      <DependentUpon>CadVeiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CheckList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CheckList.Designer.cs">
+      <DependentUpon>CheckList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CheckListFinalizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CheckListFinalizar.Designer.cs">
+      <DependentUpon>CheckListFinalizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CheckList_Chaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CheckList_Chaves.Designer.cs">
+      <DependentUpon>CheckList_Chaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Configuracoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Configuracoes.Designer.cs">
+      <DependentUpon>Configuracoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Manutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Manutencao.Designer.cs">
+      <DependentUpon>Manutencao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MovCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\MovCaixa.Designer.cs">
+      <DependentUpon>MovCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MovEntradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\MovEntradas.Designer.cs">
+      <DependentUpon>MovEntradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MovSaidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\MovSaidas.Designer.cs">
+      <DependentUpon>MovSaidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Oleo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Oleo.Designer.cs">
+      <DependentUpon>Oleo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Rel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Rel.Designer.cs">
+      <DependentUpon>Rel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relatorios_Model\RelatorioCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios_Model\RelatorioCheck.Designer.cs">
+      <DependentUpon>RelatorioCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios_Model\RelatorioCheckCompleto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios_Model\RelatorioCheckCompleto.Designer.cs">
+      <DependentUpon>RelatorioCheckCompleto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios_Model\RelatorioManutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios_Model\RelatorioManutencao.Designer.cs">
+      <DependentUpon>RelatorioManutencao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios_Model\RelatorioOleo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios_Model\RelatorioOleo.Designer.cs">
+      <DependentUpon>RelatorioOleo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguranca\Autenticacao.cs" />
+    <Compile Include="VTRDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VTRDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VTRDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VTRDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VTRDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VTRDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VTRDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VTRDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VTRDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VTRDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VTRDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VTRDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VTRDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VTRDataSet6.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Interface\Avisos.resx">
+      <DependentUpon>Avisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CadChaves.resx">
+      <DependentUpon>CadChaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CadUsuarios.resx">
+      <DependentUpon>CadUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CadVeiculos.resx">
+      <DependentUpon>CadVeiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CheckList.resx">
+      <DependentUpon>CheckList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CheckListFinalizar.resx">
+      <DependentUpon>CheckListFinalizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CheckList_Chaves.resx">
+      <DependentUpon>CheckList_Chaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Configuracoes.resx">
+      <DependentUpon>Configuracoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Manutencao.resx">
+      <DependentUpon>Manutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MovCaixa.resx">
+      <DependentUpon>MovCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MovEntradas.resx">
+      <DependentUpon>MovEntradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MovSaidas.resx">
+      <DependentUpon>MovSaidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Oleo.resx">
+      <DependentUpon>Oleo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Rel.resx">
+      <DependentUpon>Rel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Interface.Avisos.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Interface.CadChaves.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Interface.CadUsuarios.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Interface.CadVeiculos.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Interface.CheckList.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Interface.CheckListFinalizar.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Interface.CheckList_Chaves.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Interface.Configuracoes.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Interface.Login.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Interface.Manutencao.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Interface.Oleo.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Interface.Rel.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Interface.Splash.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Principal.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Relatorios.RelatorioCheck.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Relatorios_Model.RelatorioCheckCompleto.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Relatorios_Model.RelatorioManutencao.resources" />
+    <EmbeddedResource Include="obj\Debug\CheckVTR.Relatorios_Model.RelatorioOleo.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Interface.CadChaves.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Interface.CadUsuarios.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Interface.CadVeiculos.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Interface.CheckList.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Interface.CheckListFinalizar.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Interface.CheckList_Chaves.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Interface.Configuracoes.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Interface.Login.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Interface.Manutencao.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Interface.Oleo.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Interface.Rel.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Principal.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Release\CheckVTR.Relatorios.RelatorioCheck.resources" />
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Relatorios_Model\RelatorioChaves.rdlc" />
+    <EmbeddedResource Include="Relatorios_Model\RelatorioCheck.resx">
+      <DependentUpon>RelatorioCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios_Model\RelatorioCheck.rdlc" />
+    <EmbeddedResource Include="Relatorios_Model\RelatorioCheckCompleto.rdlc" />
+    <EmbeddedResource Include="Relatorios_Model\RelatorioCheckCompleto.resx">
+      <DependentUpon>RelatorioCheckCompleto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios_Model\RelatorioManutencao.rdlc" />
+    <EmbeddedResource Include="Relatorios_Model\RelatorioManutencao.resx">
+      <DependentUpon>RelatorioManutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios_Model\RelatorioOleo.rdlc" />
+    <EmbeddedResource Include="Relatorios_Model\RelatorioOleo.resx">
+      <DependentUpon>RelatorioOleo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="obj\Debug\CheckVTR.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\CheckVTR.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\RdlCompile.cache" />
+    <None Include="obj\Debug\RdlCompile.compiled" />
+    <None Include="obj\Release\CheckVTR.csproj.GenerateResource.Cache" />
+    <None Include="obj\Release\CheckVTR.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\RdlCompile.cache" />
+    <None Include="obj\Release\RdlCompile.compiled" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VTRDataSet.xsc">
+      <DependentUpon>VTRDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VTRDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VTRDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VTRDataSet.xss">
+      <DependentUpon>VTRDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VTRDataSet1.xsc">
+      <DependentUpon>VTRDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VTRDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VTRDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VTRDataSet1.xss">
+      <DependentUpon>VTRDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VTRDataSet2.xsc">
+      <DependentUpon>VTRDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="VTRDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VTRDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VTRDataSet2.xss">
+      <DependentUpon>VTRDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="VTRDataSet3.xsc">
+      <DependentUpon>VTRDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="VTRDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VTRDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VTRDataSet3.xss">
+      <DependentUpon>VTRDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="VTRDataSet4.xsc">
+      <DependentUpon>VTRDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="VTRDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VTRDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VTRDataSet4.xss">
+      <DependentUpon>VTRDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="VTRDataSet5.xsc">
+      <DependentUpon>VTRDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="VTRDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VTRDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VTRDataSet5.xss">
+      <DependentUpon>VTRDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="VTRDataSet6.xsc">
+      <DependentUpon>VTRDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="VTRDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VTRDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VTRDataSet6.xss">
+      <DependentUpon>VTRDataSet6.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ico\3d bar chart.ico" />
+    <Content Include="ico\abort.ico" />
+    <Content Include="ico\about.ico" />
+    <Content Include="ico\add.ico" />
+    <Content Include="ico\anchor.ico" />
+    <Content Include="ico\application.ico" />
+    <Content Include="ico\apply.ico" />
+    <Content Include="ico\back.ico" />
+    <Content Include="ico\bad mark.ico" />
+    <Content Include="ico\blue key.ico" />
+    <Content Include="ico\blue tag.ico" />
+    <Content Include="ico\boss.ico" />
+    <Content Include="ico\bottom.ico" />
+    <Content Include="ico\calculator.ico" />
+    <Content Include="ico\calendar.ico" />
+    <Content Include="ico\car key.ico" />
+    <Content Include="ico\CD.ico" />
+    <Content Include="ico\clipboard.ico" />
+    <Content Include="ico\clock.ico" />
+    <Content Include="ico\close.ico" />
+    <Content Include="ico\compass.ico" />
+    <Content Include="ico\component.ico" />
+    <Content Include="ico\copy.ico" />
+    <Content Include="ico\create.ico" />
+    <Content Include="ico\cut.ico" />
+    <Content Include="ico\danger.ico" />
+    <Content Include="ico\database.ico" />
+    <Content Include="ico\delete.ico" />
+    <Content Include="ico\delivery.ico" />
+    <Content Include="ico\dial.ico" />
+    <Content Include="ico\disaster.ico" />
+    <Content Include="ico\dollar.ico" />
+    <Content Include="ico\down.ico" />
+    <Content Include="ico\download.ico" />
+    <Content Include="ico\e-mail.ico" />
+    <Content Include="ico\eject.ico" />
+    <Content Include="ico\erase.ico" />
+    <Content Include="ico\error.ico" />
+    <Content Include="ico\euro.ico" />
+    <Content Include="ico\exit.ico" />
+    <Content Include="ico\fall.ico" />
+    <Content Include="ico\fast-forward.ico" />
+    <Content Include="ico\favourites.ico" />
+    <Content Include="ico\female.ico" />
+    <Content Include="ico\filter.ico" />
+    <Content Include="ico\find.ico" />
+    <Content Include="ico\first record.ico" />
+    <Content Include="ico\first.ico" />
+    <Content Include="ico\flag.ico" />
+    <Content Include="ico\folder.ico" />
+    <Content Include="ico\forbidden.ico" />
+    <Content Include="ico\forward.ico" />
+    <Content Include="ico\free bsd.ico" />
+    <Content Include="ico\go back.ico" />
+    <Content Include="ico\go forward.ico" />
+    <Content Include="ico\go.ico" />
+    <Content Include="ico\good-mark.ico" />
+    <Content Include="ico\green tag.ico" />
+    <Content Include="ico\heart.ico" />
+    <Content Include="ico\help book 3d.ico" />
+    <Content Include="ico\help book.ico" />
+    <Content Include="ico\help.ico" />
+    <Content Include="ico\hint.ico" />
+    <Content Include="ico\home.ico" />
+    <Content Include="ico\how-to.ico" />
+    <Content Include="ico\hungup.ico" />
+    <Content Include="ico\info.ico" />
+    <Content Include="ico\key.ico" />
+    <Content Include="ico\last recor.ico" />
+    <Content Include="ico\last.ico" />
+    <Content Include="ico\left-right.ico" />
+    <Content Include="ico\lightning.ico" />
+    <Content Include="ico\linux.ico" />
+    <Content Include="ico\list.ico" />
+    <Content Include="ico\load.ico" />
+    <Content Include="ico\lock.ico" />
+    <Content Include="ico\low rating.ico" />
+    <Content Include="ico\mail.ico" />
+    <Content Include="ico\male.ico" />
+    <Content Include="ico\medium rating.ico" />
+    <Content Include="ico\message.ico" />
+    <Content Include="ico\mobile-phone.ico" />
+    <Content Include="ico\modify.ico" />
+    <Content Include="ico\movie.ico" />
+    <Content Include="ico\music.ico" />
+    <Content Include="ico\new document.ico" />
+    <Content Include="ico\new.ico" />
+    <Content Include="ico\next track.ico" />
+    <Content Include="ico\next.ico" />
+    <Content Include="ico\no-entry.ico" />
+    <Content Include="ico\no.ico" />
+    <Content Include="ico\notes.ico" />
+    <Content Include="ico\OK.ico" />
+    <Content Include="ico\paste.ico" />
+    <Content Include="ico\pause.ico" />
+    <Content Include="ico\people.ico" />
+    <Content Include="ico\person.ico" />
+    <Content Include="ico\phone number.ico" />
+    <Content Include="ico\pie chart.ico" />
+    <Content Include="ico\pinion.ico" />
+    <Content Include="ico\pizza-32.ico" />
+    <Content Include="ico\play-music.ico" />
+    <Content Include="ico\play.ico" />
+    <Content Include="ico\playback.ico" />
+    <Content Include="ico\previous record.ico" />
+    <Content Include="ico\previous.ico" />
+    <Content Include="ico\problem.ico" />
+    <Content Include="ico\question.ico" />
+    <Content Include="ico\raise.ico" />
+    <Content Include="ico\record.ico" />
+    <Content Include="ico\red mark.ico" />
+    <Content Include="ico\red star.ico" />
+    <Content Include="ico\red tag.ico" />
+    <Content Include="ico\redo.ico" />
+    <Content Include="ico\refresh.ico" />
+    <Content Include="ico\remove.ico" />
+    <Content Include="ico\repair.ico" />
+    <Content Include="ico\report.ico" />
+    <Content Include="ico\retort.ico" />
+    <Content Include="ico\rewind.ico" />
+    <Content Include="ico\sad.ico" />
+    <Content Include="ico\save.ico" />
+    <Content Include="ico\search.ico" />
+    <Content Include="ico\shopping cart.ico" />
+    <Content Include="ico\smile.ico" />
+    <Content Include="ico\sound.ico" />
+    <Content Include="ico\splash.jpg" />
+    <Content Include="ico\stop sign.ico" />
+    <Content Include="ico\stop.ico" />
+    <Content Include="ico\sync.ico" />
+    <Content Include="ico\table.ico" />
+    <Content Include="ico\target.ico" />
+    <Content Include="ico\taxi.ico" />
+    <Content Include="ico\terminate.ico" />
+    <Content Include="ico\text preview.ico" />
+    <Content Include="ico\text.ico" />
+    <Content Include="ico\thumbs down.ico" />
+    <Content Include="ico\thumbs up.ico" />
+    <Content Include="ico\top.ico" />
+    <Content Include="ico\turn off.ico" />
+    <Content Include="ico\undo.ico" />
+    <Content Include="ico\unlock.ico" />
+    <Content Include="ico\up-down.ico" />
+    <Content Include="ico\up.ico" />
+    <Content Include="ico\update.ico" />
+    <Content Include="ico\upload.ico" />
+    <Content Include="ico\user group.ico" />
+    <Content Include="ico\view.ico" />
+    <Content Include="ico\warning.ico" />
+    <Content Include="ico\wrench.ico" />
+    <Content Include="ico\yes.ico" />
+    <Content Include="ico\zoom.ico" />
+    <Content Include="obj\Debug\CheckVTR.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\CheckVTR.exe" />
+    <Content Include="obj\Debug\CheckVTR.pdb" />
+    <Content Include="obj\Debug\TempPE\DataSet1.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\VTRDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\VTRDataSet1.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\VTRDataSet2.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\VTRDataSet3.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\VTRDataSet4.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\VTRDataSet5.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\VTRDataSet6.Designer.cs.dll" />
+    <Content Include="obj\Release\CheckVTR.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\CheckVTR.exe" />
+    <Content Include="obj\Release\CheckVTR.pdb" />
+    <Content Include="obj\Release\TempPE\DataSet1.Designer.cs.dll" />
+    <Content Include="obj\Release\TempPE\VTRDataSet.Designer.cs.dll" />
+    <Content Include="obj\Release\TempPE\VTRDataSet1.Designer.cs.dll" />
+    <Content Include="red mark.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

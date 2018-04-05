@@ -1,0 +1,4 @@
+localhost
+CHECKVTR
+sa
+masterkey
