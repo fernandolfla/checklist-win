@@ -133,7 +133,34 @@ namespace CheckVTR.BLL
             return c;
         }
 
+        public List<Item> ListaItem()
+        {
+            CadItemDAO DAO = new CadItemDAO();
 
+            DataTable Result = new DataTable();
+            Result = DAO.ListaItem();
+
+            if (Result != null)
+                if (Result.Rows.Count > 0)
+                {
+                    List<Item> C = new List<Item>();
+                    try
+                    {
+                        foreach (DataRow linha in Result.Rows)
+                        {
+                            Item c = new Item();
+                            c.Nome = linha.ItemArray[0].ToString();
+                            try { c.Tipo = Convert.ToInt32(linha.ItemArray[1]); } catch { c.Tipo = 0; }
+
+                            C.Add(c);
+                        }
+
+                    }
+                    catch (Exception) { return null; }
+                    return C;
+                }
+            return null;
+        }
 
     }
 }

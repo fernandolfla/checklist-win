@@ -15,8 +15,9 @@ namespace CheckVTR.Entity
         public string Placa { get; set; }
         public string KmInicial { get; set; }
         public string Obs { get; set; }
+        public string Combustivel { get; set; }
 
-    
+
         public List<Chave> Chaves = new List<Entity.Chave>();
 
 

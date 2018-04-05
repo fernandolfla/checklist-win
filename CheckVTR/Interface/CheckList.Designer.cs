@@ -30,6 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckList));
             this.panelFundo = new System.Windows.Forms.Panel();
+            this.check18 = new System.Windows.Forms.CheckBox();
+            this.check17 = new System.Windows.Forms.CheckBox();
+            this.check16 = new System.Windows.Forms.CheckBox();
+            this.check15 = new System.Windows.Forms.CheckBox();
+            this.check14 = new System.Windows.Forms.CheckBox();
+            this.check13 = new System.Windows.Forms.CheckBox();
+            this.check12 = new System.Windows.Forms.CheckBox();
+            this.check11 = new System.Windows.Forms.CheckBox();
+            this.check10 = new System.Windows.Forms.CheckBox();
             this.txtOleoVencido = new System.Windows.Forms.TextBox();
             this.txtKmInicial = new System.Windows.Forms.MaskedTextBox();
             this.txtObs = new System.Windows.Forms.TextBox();
@@ -58,21 +67,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtTatico = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.check18 = new System.Windows.Forms.CheckBox();
-            this.check17 = new System.Windows.Forms.CheckBox();
-            this.check16 = new System.Windows.Forms.CheckBox();
-            this.check15 = new System.Windows.Forms.CheckBox();
-            this.check14 = new System.Windows.Forms.CheckBox();
-            this.check13 = new System.Windows.Forms.CheckBox();
-            this.check12 = new System.Windows.Forms.CheckBox();
-            this.check11 = new System.Windows.Forms.CheckBox();
-            this.check10 = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.trackBarCombustivel = new System.Windows.Forms.TrackBar();
             this.panelFundo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarCombustivel)).BeginInit();
             this.SuspendLayout();
             // 
             // panelFundo
             // 
             this.panelFundo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelFundo.Controls.Add(this.trackBarCombustivel);
+            this.panelFundo.Controls.Add(this.label7);
             this.panelFundo.Controls.Add(this.check18);
             this.panelFundo.Controls.Add(this.check17);
             this.panelFundo.Controls.Add(this.check16);
@@ -114,6 +119,114 @@
             this.panelFundo.Name = "panelFundo";
             this.panelFundo.Size = new System.Drawing.Size(960, 538);
             this.panelFundo.TabIndex = 0;
+            // 
+            // check18
+            // 
+            this.check18.AutoSize = true;
+            this.check18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check18.Location = new System.Drawing.Point(602, 470);
+            this.check18.Name = "check18";
+            this.check18.Size = new System.Drawing.Size(83, 28);
+            this.check18.TabIndex = 37;
+            this.check18.Text = "Check";
+            this.check18.UseVisualStyleBackColor = true;
+            this.check18.Visible = false;
+            // 
+            // check17
+            // 
+            this.check17.AutoSize = true;
+            this.check17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check17.Location = new System.Drawing.Point(602, 411);
+            this.check17.Name = "check17";
+            this.check17.Size = new System.Drawing.Size(83, 28);
+            this.check17.TabIndex = 36;
+            this.check17.Text = "Check";
+            this.check17.UseVisualStyleBackColor = true;
+            this.check17.Visible = false;
+            // 
+            // check16
+            // 
+            this.check16.AutoSize = true;
+            this.check16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check16.Location = new System.Drawing.Point(602, 357);
+            this.check16.Name = "check16";
+            this.check16.Size = new System.Drawing.Size(83, 28);
+            this.check16.TabIndex = 35;
+            this.check16.Text = "Check";
+            this.check16.UseVisualStyleBackColor = true;
+            this.check16.Visible = false;
+            // 
+            // check15
+            // 
+            this.check15.AutoSize = true;
+            this.check15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check15.Location = new System.Drawing.Point(602, 302);
+            this.check15.Name = "check15";
+            this.check15.Size = new System.Drawing.Size(83, 28);
+            this.check15.TabIndex = 34;
+            this.check15.Text = "Check";
+            this.check15.UseVisualStyleBackColor = true;
+            this.check15.Visible = false;
+            // 
+            // check14
+            // 
+            this.check14.AutoSize = true;
+            this.check14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check14.Location = new System.Drawing.Point(602, 246);
+            this.check14.Name = "check14";
+            this.check14.Size = new System.Drawing.Size(83, 28);
+            this.check14.TabIndex = 33;
+            this.check14.Text = "Check";
+            this.check14.UseVisualStyleBackColor = true;
+            this.check14.Visible = false;
+            // 
+            // check13
+            // 
+            this.check13.AutoSize = true;
+            this.check13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check13.Location = new System.Drawing.Point(602, 190);
+            this.check13.Name = "check13";
+            this.check13.Size = new System.Drawing.Size(83, 28);
+            this.check13.TabIndex = 32;
+            this.check13.Text = "Check";
+            this.check13.UseVisualStyleBackColor = true;
+            this.check13.Visible = false;
+            // 
+            // check12
+            // 
+            this.check12.AutoSize = true;
+            this.check12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check12.Location = new System.Drawing.Point(602, 138);
+            this.check12.Name = "check12";
+            this.check12.Size = new System.Drawing.Size(83, 28);
+            this.check12.TabIndex = 31;
+            this.check12.Text = "Check";
+            this.check12.UseVisualStyleBackColor = true;
+            this.check12.Visible = false;
+            // 
+            // check11
+            // 
+            this.check11.AutoSize = true;
+            this.check11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check11.Location = new System.Drawing.Point(602, 79);
+            this.check11.Name = "check11";
+            this.check11.Size = new System.Drawing.Size(83, 28);
+            this.check11.TabIndex = 30;
+            this.check11.Text = "Check";
+            this.check11.UseVisualStyleBackColor = true;
+            this.check11.Visible = false;
+            // 
+            // check10
+            // 
+            this.check10.AutoSize = true;
+            this.check10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check10.Location = new System.Drawing.Point(602, 25);
+            this.check10.Name = "check10";
+            this.check10.Size = new System.Drawing.Size(83, 28);
+            this.check10.TabIndex = 29;
+            this.check10.Text = "Check";
+            this.check10.UseVisualStyleBackColor = true;
+            this.check10.Visible = false;
             // 
             // txtOleoVencido
             // 
@@ -372,7 +485,7 @@
             this.dateTimeInicio.Enabled = false;
             this.dateTimeInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimeInicio.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimeInicio.Location = new System.Drawing.Point(48, 345);
+            this.dateTimeInicio.Location = new System.Drawing.Point(13, 313);
             this.dateTimeInicio.Name = "dateTimeInicio";
             this.dateTimeInicio.Size = new System.Drawing.Size(156, 38);
             this.dateTimeInicio.TabIndex = 5;
@@ -381,7 +494,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 302);
+            this.label3.Location = new System.Drawing.Point(9, 272);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(307, 24);
             this.label3.TabIndex = 4;
@@ -431,113 +544,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tático";
             // 
-            // check18
+            // label7
             // 
-            this.check18.AutoSize = true;
-            this.check18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check18.Location = new System.Drawing.Point(602, 470);
-            this.check18.Name = "check18";
-            this.check18.Size = new System.Drawing.Size(83, 28);
-            this.check18.TabIndex = 37;
-            this.check18.Text = "Check";
-            this.check18.UseVisualStyleBackColor = true;
-            this.check18.Visible = false;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(9, 370);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(113, 24);
+            this.label7.TabIndex = 38;
+            this.label7.Text = "Combustível";
             // 
-            // check17
+            // trackBarCombustivel
             // 
-            this.check17.AutoSize = true;
-            this.check17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check17.Location = new System.Drawing.Point(602, 411);
-            this.check17.Name = "check17";
-            this.check17.Size = new System.Drawing.Size(83, 28);
-            this.check17.TabIndex = 36;
-            this.check17.Text = "Check";
-            this.check17.UseVisualStyleBackColor = true;
-            this.check17.Visible = false;
-            // 
-            // check16
-            // 
-            this.check16.AutoSize = true;
-            this.check16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check16.Location = new System.Drawing.Point(602, 357);
-            this.check16.Name = "check16";
-            this.check16.Size = new System.Drawing.Size(83, 28);
-            this.check16.TabIndex = 35;
-            this.check16.Text = "Check";
-            this.check16.UseVisualStyleBackColor = true;
-            this.check16.Visible = false;
-            // 
-            // check15
-            // 
-            this.check15.AutoSize = true;
-            this.check15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check15.Location = new System.Drawing.Point(602, 302);
-            this.check15.Name = "check15";
-            this.check15.Size = new System.Drawing.Size(83, 28);
-            this.check15.TabIndex = 34;
-            this.check15.Text = "Check";
-            this.check15.UseVisualStyleBackColor = true;
-            this.check15.Visible = false;
-            // 
-            // check14
-            // 
-            this.check14.AutoSize = true;
-            this.check14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check14.Location = new System.Drawing.Point(602, 246);
-            this.check14.Name = "check14";
-            this.check14.Size = new System.Drawing.Size(83, 28);
-            this.check14.TabIndex = 33;
-            this.check14.Text = "Check";
-            this.check14.UseVisualStyleBackColor = true;
-            this.check14.Visible = false;
-            // 
-            // check13
-            // 
-            this.check13.AutoSize = true;
-            this.check13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check13.Location = new System.Drawing.Point(602, 190);
-            this.check13.Name = "check13";
-            this.check13.Size = new System.Drawing.Size(83, 28);
-            this.check13.TabIndex = 32;
-            this.check13.Text = "Check";
-            this.check13.UseVisualStyleBackColor = true;
-            this.check13.Visible = false;
-            // 
-            // check12
-            // 
-            this.check12.AutoSize = true;
-            this.check12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check12.Location = new System.Drawing.Point(602, 138);
-            this.check12.Name = "check12";
-            this.check12.Size = new System.Drawing.Size(83, 28);
-            this.check12.TabIndex = 31;
-            this.check12.Text = "Check";
-            this.check12.UseVisualStyleBackColor = true;
-            this.check12.Visible = false;
-            // 
-            // check11
-            // 
-            this.check11.AutoSize = true;
-            this.check11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check11.Location = new System.Drawing.Point(602, 79);
-            this.check11.Name = "check11";
-            this.check11.Size = new System.Drawing.Size(83, 28);
-            this.check11.TabIndex = 30;
-            this.check11.Text = "Check";
-            this.check11.UseVisualStyleBackColor = true;
-            this.check11.Visible = false;
-            // 
-            // check10
-            // 
-            this.check10.AutoSize = true;
-            this.check10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check10.Location = new System.Drawing.Point(602, 25);
-            this.check10.Name = "check10";
-            this.check10.Size = new System.Drawing.Size(83, 28);
-            this.check10.TabIndex = 29;
-            this.check10.Text = "Check";
-            this.check10.UseVisualStyleBackColor = true;
-            this.check10.Visible = false;
+            this.trackBarCombustivel.Location = new System.Drawing.Point(158, 370);
+            this.trackBarCombustivel.Maximum = 100;
+            this.trackBarCombustivel.Name = "trackBarCombustivel";
+            this.trackBarCombustivel.Size = new System.Drawing.Size(209, 45);
+            this.trackBarCombustivel.TabIndex = 39;
             // 
             // CheckList
             // 
@@ -555,6 +578,7 @@
             this.Text = "CheckList";
             this.panelFundo.ResumeLayout(false);
             this.panelFundo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarCombustivel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -599,5 +623,7 @@
         private System.Windows.Forms.CheckBox check12;
         private System.Windows.Forms.CheckBox check11;
         private System.Windows.Forms.CheckBox check10;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TrackBar trackBarCombustivel;
     }
 }
