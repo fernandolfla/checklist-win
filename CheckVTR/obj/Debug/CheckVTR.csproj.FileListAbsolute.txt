@@ -39,3 +39,44 @@ C:\Users\Fernando\Desktop\Projeto CheckVTR\CheckVTR\CheckVTR\bin\Debug\ru\Micros
 C:\Users\Fernando\Desktop\Projeto CheckVTR\CheckVTR\CheckVTR\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
 C:\Users\Fernando\Desktop\Projeto CheckVTR\CheckVTR\CheckVTR\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
 C:\Users\Fernando\Desktop\Projeto CheckVTR\CheckVTR\CheckVTR\obj\Debug\CheckVTR.csproj.CoreCompileInputs.cache
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\CheckVTR.exe.config
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\CheckVTR.exe
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\CheckVTR.pdb
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.csprojResolveAssemblyReference.cache
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.Avisos.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.CadChaves.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.CadUsuarios.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.CadVeiculos.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.CheckList.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.CheckListFinalizar.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.CheckList_Chaves.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.Configuracoes.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.Login.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.Manutencao.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.MovCaixa.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.MovEntradas.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.MovSaidas.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.Oleo.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.Rel.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.Splash.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Principal.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Properties.Resources.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Relatorios.RelatorioCheck.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Relatorios_Model.RelatorioCheckCompleto.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Relatorios_Model.RelatorioManutencao.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Relatorios_Model.RelatorioOleo.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.csproj.GenerateResource.Cache
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.csproj.CoreCompileInputs.cache
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.exe
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.pdb
