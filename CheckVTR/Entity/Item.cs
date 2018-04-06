@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CheckVTR.Entity
 {
-    class Item
+    public class Item
     {
         public string Id{ get; set; }
 
@@ -14,7 +14,9 @@ namespace CheckVTR.Entity
 
         public int Tipo { get; set; }
 
+        public int Check { get; set; }
 
+        public string Percentual { get; set; }
 
 
     }

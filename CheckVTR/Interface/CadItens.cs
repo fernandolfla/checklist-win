@@ -37,8 +37,6 @@ namespace CheckVTR.Interface
         {
             txtCodigo.Text = "";
             txtNome.Text = "";
-            checkNormal.Checked = true;
-            checkPorcentagem.Checked = false;
         }
 
         private Item TelaToEntity()
@@ -47,10 +45,7 @@ namespace CheckVTR.Interface
 
             item.Id = txtCodigo.Text;
             item.Nome = txtNome.Text;
-            if (checkNormal.Checked)
-                item.Tipo = 0;
-            else
-                item.Tipo = 1;
+          
 
             return item;
 
@@ -60,16 +55,7 @@ namespace CheckVTR.Interface
         {
             txtCodigo.Text = item.Id;
             txtNome.Text = item.Nome;
-            if (item.Tipo == 0)
-            {
-                checkNormal.Checked = true;
-                checkPorcentagem.Checked = false;
-            }
-            else
-            {
-                checkNormal.Checked = false;
-                checkPorcentagem.Checked = true;
-            }
+            
 
         }
 
@@ -100,21 +86,6 @@ namespace CheckVTR.Interface
 
         }
 
-        private void Normal_changed(object sender, EventArgs e)
-        {
-            if (checkNormal.Checked)
-                checkPorcentagem.Checked = false;
-            else
-                checkPorcentagem.Checked = true;
-        }
-
-        private void Porcentagem_Changed(object sender, EventArgs e)
-        {
-            if (checkPorcentagem.Checked)
-                checkNormal.Checked = false;
-            else
-                checkNormal.Checked = true;
-        }
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
@@ -162,24 +133,35 @@ namespace CheckVTR.Interface
         {
 
             DialogResult Result = MessageBox.Show("Realmente deseja Excluir? A Exclusão pode ocasionar inconsistencia no Banco de Dados! ", "Importante", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (Result == DialogResult.Yes)
+
+            int cod = 2;
+            try { cod = Convert.ToInt32(txtCodigo.Text); } catch { cod = 2; }
+
+            if (cod != 1)
             {
-                CadItemBLL BLL = new CadItemBLL();
-                Item c = new Item();
-                c = TelaToEntity();
-                if (BLL.Apaga(c.Id))
+                if (Result == DialogResult.Yes)
                 {
-                    MessageBox.Show("Deletado com Sucesso");
+                    CadItemBLL BLL = new CadItemBLL();
+                    Item c = new Item();
+                    c = TelaToEntity();
+                    if (BLL.Apaga(c.Id))
+                    {
+                        MessageBox.Show("Deletado com Sucesso");
+                    }
+                    else MessageBox.Show("O Item já foi utilizado e não poderá ser excluido, ou Selecione um Item Válido!");
+
+                    LimpaTela();
+                    MensagemErro();
+
                 }
-                else MessageBox.Show("O Item já foi utilizado e não poderá ser excluido, ou Selecione um Item Válido!");
-
-                LimpaTela();
-                MensagemErro();
-
-
-
-
             }
+            else
+                MessageBox.Show("O item Óleo é o único que não pode ser deletado");
         }
+
+
+
+
+
     }
 }

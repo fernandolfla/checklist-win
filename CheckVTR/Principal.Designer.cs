@@ -46,6 +46,7 @@
             this.txtSerial = new System.Windows.Forms.TextBox();
             this.btnCaixa = new System.Windows.Forms.Button();
             this.btnItens = new System.Windows.Forms.Button();
+            this.btnConfiguracoes = new System.Windows.Forms.Button();
             this.painelPrincipalRodape.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -234,11 +235,23 @@
             this.btnItens.UseVisualStyleBackColor = true;
             this.btnItens.Click += new System.EventHandler(this.btnItens_Click);
             // 
+            // btnConfiguracoes
+            // 
+            this.btnConfiguracoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfiguracoes.Location = new System.Drawing.Point(544, 411);
+            this.btnConfiguracoes.Name = "btnConfiguracoes";
+            this.btnConfiguracoes.Size = new System.Drawing.Size(130, 80);
+            this.btnConfiguracoes.TabIndex = 12;
+            this.btnConfiguracoes.Text = "Configurações";
+            this.btnConfiguracoes.UseVisualStyleBackColor = true;
+            this.btnConfiguracoes.Click += new System.EventHandler(this.btnConfiguracoes_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.btnConfiguracoes);
             this.Controls.Add(this.btnItens);
             this.Controls.Add(this.btnCaixa);
             this.Controls.Add(this.painelPrincipalRodape);
@@ -284,6 +297,7 @@
         private System.Windows.Forms.TextBox txtSerial;
         private System.Windows.Forms.Button btnCaixa;
         private System.Windows.Forms.Button btnItens;
+        private System.Windows.Forms.Button btnConfiguracoes;
     }
 }
 

@@ -38,22 +38,27 @@ namespace CheckVTR.Interface
             if (chaves != null)
             {
 
+                chavesA = chaves;
 
-                foreach (Chave p in chaves)
-                {
-                    if (p.Area.Equals(check.Area) && !p.Area.Equals("2"))
-                            chavesA.Add(p);
-                    if(p.Area.Equals("2"))
-                        chavesA.Add(p);
-                }
+                //foreach (Chave p in chaves)
+                //{
+                //    if (p.Area.Equals(check.Area) && !p.Area.Equals("2"))
+                //            chavesA.Add(p);
+                //    if(p.Area.Equals("2"))
+                //        chavesA.Add(p);
+                //}
 
+                //separação por área apos criar opção no banco
                 
 
                 if(chavesA != null)
                 {
 
-                    checkBox1.Visible = true;
-                    checkBox1.Text = chavesA[0].Nome;
+                    if (chavesA.Count == 1)
+                    {
+                        checkBox1.Visible = true;
+                        checkBox1.Text = chavesA[0].Nome;
+                    }
                     if (chavesA.Count > 1)
                     {
                         checkBox2.Visible = true;

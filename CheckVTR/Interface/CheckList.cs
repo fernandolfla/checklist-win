@@ -19,6 +19,7 @@ namespace CheckVTR.Interface
         private List<Veiculo> veiculos = new List<Veiculo>();
         private List<Veiculo> veiculosB = new List<Veiculo>();
         private List<Item> item = new List<Item>();
+        //private List<Item> item_checados = new List<Item>();
 
         public CheckList()
         {
@@ -42,6 +43,8 @@ namespace CheckVTR.Interface
 
             CadItemBLL BLL2 = new CadItemBLL();
             item = BLL2.ListaItem();
+
+
             if(item != null)
             {
                 check1.Visible = true;
@@ -230,7 +233,11 @@ namespace CheckVTR.Interface
             if (string.IsNullOrEmpty(c.Obs))
                 c.Obs = "Plantão S.A.";
 
-            c.Combustivel = trackBarCombustivel.Value.ToString();  // FAZER BANCO BLL DAO
+            c.Combustivel = trackBarCombustivel.Value.ToString();
+
+            VerificaCheck();
+
+            c.Itens = item;
 
             return c;
         }
@@ -264,7 +271,7 @@ namespace CheckVTR.Interface
         {
             if (verificaTela())
             {
-                CheckList_Chaves Tela = new CheckList_Chaves(TelaToEntity());
+                CheckList_Chaves Tela = new CheckList_Chaves(TelaToEntity());               
                 Tela.ShowDialog();
             }
         }
@@ -281,11 +288,185 @@ namespace CheckVTR.Interface
 
         private void VerificaCheck()
         {
-
+            if(check1.Visible)
+            {
+                if (check1.Checked)
+                    item[0].Check = 1;
+                else
+                    item[0].Check = 0;
+            }
+            if (check2.Visible)
+            {
+                if (check2.Checked)
+                    item[1].Check = 1;
+                else
+                    item[1].Check = 0;
+            }
+            if (check3.Visible)
+            {
+                if (check3.Checked)
+                    item[2].Check = 1;
+                else
+                    item[2].Check = 0;
+            }
+            if (check4.Visible)
+            {
+                if (check4.Checked)
+                    item[3].Check = 1;
+                else
+                    item[3].Check = 0;
+            }
+            if (check5.Visible)
+            {
+                if (check5.Checked)
+                    item[4].Check = 1;
+                else
+                    item[4].Check = 0;
+            }
+            if (check6.Visible)
+            {
+                if (check6.Checked)
+                    item[5].Check = 1;
+                else
+                    item[5].Check = 0;
+            }
+            if (check7.Visible)
+            {
+                if (check7.Checked)
+                    item[6].Check = 1;
+                else
+                    item[6].Check = 0;
+            }
+            if (check8.Visible)
+            {
+                if (check8.Checked)
+                    item[7].Check = 1;
+                else
+                    item[7].Check = 0;
+            }
+            if (check9.Visible)
+            {
+                if (check9.Checked)
+                    item[8].Check = 1;
+                else
+                    item[8].Check = 0;
+            }
+            if (check10.Visible)
+            {
+                if (check10.Checked)
+                    item[9].Check = 1;
+                else
+                    item[9].Check = 0;
+            }
+            if (check11.Visible)
+            {
+                if (check11.Checked)
+                    item[10].Check = 1;
+                else
+                    item[10].Check = 0;
+            }
+            if (check12.Visible)
+            {
+                if (check12.Checked)
+                    item[11].Check = 1;
+                else
+                    item[11].Check = 0;
+            }
+            if (check13.Visible)
+            {
+                if (check13.Checked)
+                    item[12].Check = 1;
+                else
+                    item[12].Check = 0;
+            }
+            if (check14.Visible)
+            {
+                if (check14.Checked)
+                    item[13].Check = 1;
+                else
+                    item[13].Check = 0;
+            }
+            if (check15.Visible)
+            {
+                if (check15.Checked)
+                    item[14].Check = 1;
+                else
+                    item[14].Check = 0;
+            }
+            if (check16.Visible)
+            {
+                if (check16.Checked)
+                    item[15].Check = 1;
+                else
+                    item[15].Check = 0;
+            }
+            if (check17.Visible)
+            {
+                if (check17.Checked)
+                    item[16].Check = 1;
+                else
+                    item[16].Check = 0;
+            }
+            if (check18.Visible)
+            {
+                if (check18.Checked)
+                    item[17].Check = 1;
+                else
+                    item[17].Check = 0;
+            }
+            if (check19.Visible)
+            {
+                if (check19.Checked)
+                    item[18].Check = 1;
+                else
+                    item[18].Check = 0;
+            }
+            if (check20.Visible)
+            {
+                if (check20.Checked)
+                    item[19].Check = 1;
+                else
+                    item[19].Check = 0;
+            }
+            if (check21.Visible)
+            {
+                if (check21.Checked)
+                    item[20].Check = 1;
+                else
+                    item[20].Check = 0;
+            }
+            if (check22.Visible)
+            {
+                if (check22.Checked)
+                    item[21].Check = 1;
+                else
+                    item[21].Check = 0;
+            }
         }
 
 
+        /*
+          private void VerificaCheck()
+        {
 
+            if (checkBox1.Visible)
+            {
+                if (checkBox1.Checked)
+                    chavesA[0].Check = 1;
+                else
+                    chavesA[0].Check = 0;
+                chavesSelect.Add(chavesA[0]);
+            }
+            if (checkBox2.Visible)
+            {
+                if (checkBox2.Checked)
+                    chavesA[1].Check = 1;
+                else
+                    chavesA[1].Check = 0;
+                chavesSelect.Add(chavesA[1]);
+            }
+         
+         */
 
 
     }

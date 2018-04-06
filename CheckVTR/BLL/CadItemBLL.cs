@@ -149,8 +149,10 @@ namespace CheckVTR.BLL
                         foreach (DataRow linha in Result.Rows)
                         {
                             Item c = new Item();
-                            c.Nome = linha.ItemArray[0].ToString();
-                            try { c.Tipo = Convert.ToInt32(linha.ItemArray[1]); } catch { c.Tipo = 0; }
+
+                            c.Id = linha.ItemArray[0].ToString();
+                            c.Nome = linha.ItemArray[1].ToString();
+                           
 
                             C.Add(c);
                         }

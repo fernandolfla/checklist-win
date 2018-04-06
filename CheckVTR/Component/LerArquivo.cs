@@ -1,7 +1,5 @@
 ﻿using CheckVTR.Entity;
 using CheckVTR.Seguranca;
-using CheckVTR.Entity;
-using CheckVTR.Seguranca;
 using System;
 using System.Collections.Generic;
 using System.Linq;

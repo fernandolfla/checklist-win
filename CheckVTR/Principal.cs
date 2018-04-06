@@ -166,5 +166,13 @@ namespace CheckVTR
             caditens.ShowDialog();
 
         }
+
+        private void btnConfiguracoes_Click(object sender, EventArgs e)
+        {
+
+
+
+
+        }
     }
 }

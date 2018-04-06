@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -80,11 +95,6 @@
     <Compile Include="DAO\MovimentoDAO.cs" />
     <Compile Include="DAO\OleoDAO.cs" />
     <Compile Include="DAO\RelatoriosDAO.cs" />
-    <Compile Include="DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Entity\Caixa_Movimento.cs" />
     <Compile Include="Entity\Caixa_Situacao.cs" />
     <Compile Include="Entity\Chave.cs" />
@@ -236,41 +246,6 @@
       <DependentUpon>RelatorioOleo.cs</DependentUpon>
     </Compile>
     <Compile Include="Seguranca\Autenticacao.cs" />
-    <Compile Include="VTRDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VTRDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="VTRDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VTRDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="VTRDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VTRDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="VTRDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VTRDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="VTRDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VTRDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="VTRDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VTRDataSet5.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="VTRDataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VTRDataSet6.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Interface\Avisos.resx">
       <DependentUpon>Avisos.cs</DependentUpon>
     </EmbeddedResource>
@@ -385,17 +360,6 @@
     <EmbeddedResource Include="Relatorios_Model\RelatorioOleo.resx">
       <DependentUpon>RelatorioOleo.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataSet1.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
     <None Include="obj\Debug\CheckVTR.csproj.GenerateResource.Cache" />
     <None Include="obj\Debug\CheckVTR.csprojResolveAssemblyReference.cache" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
@@ -416,88 +380,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="VTRDataSet.xsc">
-      <DependentUpon>VTRDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="VTRDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VTRDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VTRDataSet.xss">
-      <DependentUpon>VTRDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="VTRDataSet1.xsc">
-      <DependentUpon>VTRDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="VTRDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VTRDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VTRDataSet1.xss">
-      <DependentUpon>VTRDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="VTRDataSet2.xsc">
-      <DependentUpon>VTRDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="VTRDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VTRDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VTRDataSet2.xss">
-      <DependentUpon>VTRDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="VTRDataSet3.xsc">
-      <DependentUpon>VTRDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="VTRDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VTRDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VTRDataSet3.xss">
-      <DependentUpon>VTRDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="VTRDataSet4.xsc">
-      <DependentUpon>VTRDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="VTRDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VTRDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VTRDataSet4.xss">
-      <DependentUpon>VTRDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="VTRDataSet5.xsc">
-      <DependentUpon>VTRDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="VTRDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VTRDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VTRDataSet5.xss">
-      <DependentUpon>VTRDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="VTRDataSet6.xsc">
-      <DependentUpon>VTRDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="VTRDataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VTRDataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VTRDataSet6.xss">
-      <DependentUpon>VTRDataSet6.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="ico\3d bar chart.ico" />
     <Content Include="ico\abort.ico" />

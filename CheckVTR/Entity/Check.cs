@@ -20,6 +20,8 @@ namespace CheckVTR.Entity
 
         public List<Chave> Chaves = new List<Entity.Chave>();
 
+        public List<Item> Itens = new List<Entity.Item>();
+
 
 
 

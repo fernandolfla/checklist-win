@@ -68,6 +68,18 @@ namespace CheckVTR.BLL
                                 else
                                     break;
                         }
+
+                        foreach(Item i in c.Itens)
+                        {
+                            DataTable Result3 = new DataTable();
+                            Result3 = DAO.Cadastra_Itens(i, checkID, Autenticacao.GetCodUsuario());
+                            if(Result3 != null)
+                                if (Result3.Rows[0].ItemArray[0].ToString().Equals("1"))
+                                    continue;
+                                else
+                                    break;
+                        }
+
                         return true;
                     }
                     else return false;

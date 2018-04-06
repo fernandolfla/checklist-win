@@ -61,6 +61,7 @@ namespace CheckVTR.DAO
                 Cmd.SelectCommand.Parameters.Add("@PLACA", SqlDbType.VarChar).Value = c.Placa;
                 Cmd.SelectCommand.Parameters.Add("@KMINICIAL", SqlDbType.VarChar).Value = c.KmInicial;
                 Cmd.SelectCommand.Parameters.Add("@OBS", SqlDbType.NText).Value = c.Obs;
+                Cmd.SelectCommand.Parameters.Add("@COMBUSTIVEL", SqlDbType.VarChar).Value = c.Combustivel;
 
                 DataTable data = new DataTable();
 
@@ -101,6 +102,44 @@ namespace CheckVTR.DAO
                 Cmd.SelectCommand.Parameters.Add("@CHAVENOME", SqlDbType.VarChar).Value = c.Nome;
                 Cmd.SelectCommand.Parameters.Add("@CHECK", SqlDbType.VarChar).Value = c.Check;
                 
+
+
+                DataTable data = new DataTable();
+
+                Cmd.Fill(data);
+                Fechar();
+                return data;
+
+            }
+            catch (Exception e)
+            {
+                Erros.SetErroBanco(e);
+                Erros.SetHaErro(true);
+            }
+            finally
+            {
+                Fechar();
+            }
+            return null;
+        }
+
+        public DataTable Cadastra_Itens(Item c, int check , int usuario)
+        {
+            try
+            {
+                CriarConexao();
+                Abrir();
+                SqlDataAdapter Cmd;
+
+                Cmd = new SqlDataAdapter("SP_CadastraCheckList_Itens", con);
+
+                Cmd.SelectCommand.CommandType = System.Data.CommandType.StoredProcedure;
+
+                Cmd.SelectCommand.Parameters.Add("@USUARIO", SqlDbType.VarChar).Value = usuario;
+                Cmd.SelectCommand.Parameters.Add("@CHECK", SqlDbType.VarChar).Value = check;
+                Cmd.SelectCommand.Parameters.Add("@ITEM", SqlDbType.VarChar).Value = c.Id;
+                Cmd.SelectCommand.Parameters.Add("@CHECADO", SqlDbType.VarChar).Value = c.Check;
+
 
 
                 DataTable data = new DataTable();

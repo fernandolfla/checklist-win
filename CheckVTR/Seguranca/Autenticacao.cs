@@ -12,7 +12,7 @@ namespace CheckVTR.Seguranca
         static int CodUsuario;
         static string NomeUsuario;
         static string Apelido;
-        static int UltimoCheckList;
+        //static int UltimoCheckList;
 
         static string Serial;
         static string Versao;
@@ -62,10 +62,10 @@ namespace CheckVTR.Seguranca
         {
             CodUsuario = codUsuario;
         }
-        public static int GetUltimoCheckList()
-        {
-            return UltimoCheckList;
-        }
+        //public static int GetUltimoCheckList()
+        //{
+        //    return UltimoCheckList;
+        //}
         public static int GetSituacaoUsuario()
         {
             return Situacao;
