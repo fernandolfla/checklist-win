@@ -19,15 +19,21 @@ namespace CheckVTR.Interface
         List<Chave> chavesA = new List<Entity.Chave>();
         List<Chave> chavesSelect = new List<Entity.Chave>();
         List<Chave> chavesB = new List<Entity.Chave>();
+
+
         Check check = new Check();
+        private Entity.Configuracao conf = new Entity.Configuracao();
         public CheckList_Chaves(Check check)
         {
 
 
             InitializeComponent();
 
+
             this.check = check;
 
+            int area = 0;  //seta a area do alfa que verá as chaves
+            try { area = Convert.ToInt32(check.Area); } catch { area = 1; }
 
             CheckListBLL BLL = new CheckListBLL();
 
@@ -38,27 +44,25 @@ namespace CheckVTR.Interface
             if (chaves != null)
             {
 
-                chavesA = chaves;
+                //chavesA = chaves;  // depois apagar
 
-                //foreach (Chave p in chaves)
-                //{
-                //    if (p.Area.Equals(check.Area) && !p.Area.Equals("2"))
-                //            chavesA.Add(p);
-                //    if(p.Area.Equals("2"))
-                //        chavesA.Add(p);
-                //}
+                foreach (Chave p in chaves)
+                {
+                    int a1 = 1;
+                    try { a1 = Convert.ToInt32(p.Area); } catch { }
+                    if(area == a1)
+                        chavesA.Add(p);
+                }
 
                 //separação por área apos criar opção no banco
-                
 
-                if(chavesA != null)
+
+                if (chavesA != null)
                 {
 
-                    if (chavesA.Count == 1)
-                    {
                         checkBox1.Visible = true;
                         checkBox1.Text = chavesA[0].Nome;
-                    }
+                    
                     if (chavesA.Count > 1)
                     {
                         checkBox2.Visible = true;

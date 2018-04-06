@@ -15,9 +15,24 @@ namespace CheckVTR.Interface
 {
     public partial class CadChaves : Form
     {
+        private Entity.Configuracao conf = new Entity.Configuracao();
         public CadChaves()
         {
             InitializeComponent();
+
+            ConfiguracoesBLL BLL3 = new ConfiguracoesBLL();
+            conf = BLL3.Busca();
+
+            if (conf != null)
+            {
+                int qtd;
+                try { qtd = Convert.ToInt32(conf.QtdAreas); } catch { qtd = 1; }
+                for (int i = 1; i <= qtd; i++)
+                {
+                    comboArea.Items.Add(i);
+                }
+            }
+
         }
 
         private void MensagemErro()

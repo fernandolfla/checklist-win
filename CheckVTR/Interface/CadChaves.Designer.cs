@@ -171,10 +171,6 @@
             this.comboArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboArea.FormattingEnabled = true;
-            this.comboArea.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
             this.comboArea.Location = new System.Drawing.Point(166, 158);
             this.comboArea.Name = "comboArea";
             this.comboArea.Size = new System.Drawing.Size(89, 33);

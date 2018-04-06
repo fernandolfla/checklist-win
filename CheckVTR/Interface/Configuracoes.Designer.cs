@@ -131,15 +131,14 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(550, 114);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Encerrar Plantão Ativo! Será enviado um e-mail para o Supervisor em clodoaldo@jur" +
-    "iseg.com.br devido ao não encerramento do Plantão!  Para encerrar clique 2 vezes" +
-    " sobre uma linha.";
+            this.textBox1.Text = "Encerrar Plantão Ativo! Será enviado um e-mail para a Supervisão devido ao não en" +
+    "cerramento do Plantão!  Para encerrar clique 2 vezes sobre uma linha.";
             // 
             // Configuracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 362);
+            this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.panelFundo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

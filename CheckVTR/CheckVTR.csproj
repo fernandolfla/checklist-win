@@ -99,6 +99,7 @@
     <Compile Include="Entity\Caixa_Situacao.cs" />
     <Compile Include="Entity\Chave.cs" />
     <Compile Include="Entity\Check.cs" />
+    <Compile Include="Entity\Configuracao.cs" />
     <Compile Include="Entity\ConfiTxt.cs" />
     <Compile Include="Entity\Item.cs" />
     <Compile Include="Entity\ManutencaoBD.cs" />
@@ -152,6 +153,12 @@
     </Compile>
     <Compile Include="Interface\CheckList_Chaves.Designer.cs">
       <DependentUpon>CheckList_Chaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Configuracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Configuracao.Designer.cs">
+      <DependentUpon>Configuracao.cs</DependentUpon>
     </Compile>
     <Compile Include="Interface\Configuracoes.cs">
       <SubType>Form</SubType>
@@ -269,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\CheckList_Chaves.resx">
       <DependentUpon>CheckList_Chaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Configuracao.resx">
+      <DependentUpon>Configuracao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\Configuracoes.resx">
       <DependentUpon>Configuracoes.cs</DependentUpon>

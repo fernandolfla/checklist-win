@@ -1,4 +1,5 @@
-﻿using CheckVTR.Interface;
+﻿using CheckVTR.BLL;
+using CheckVTR.Interface;
 using CheckVTR.Seguranca;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace CheckVTR
 {
     public partial class Principal : Form
     {
+ 
         public Principal()
         {
             InitializeComponent();
@@ -35,7 +37,8 @@ namespace CheckVTR
             }
 
             
-            
+
+
 
         }
 
@@ -169,7 +172,8 @@ namespace CheckVTR
 
         private void btnConfiguracoes_Click(object sender, EventArgs e)
         {
-
+            Interface.Configuracao tela = new Configuracao();
+            tela.ShowDialog();
 
 
 

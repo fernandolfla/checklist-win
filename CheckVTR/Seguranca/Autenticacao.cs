@@ -48,6 +48,7 @@ namespace CheckVTR.Seguranca
             Caixa.Id = id;
             //Caixa.Situacao_Id = situacao_id;
         }
+
         public static void SetCaixa_Situacao(Caixa_Situacao cx)
         {
             //Caixa.Caixa_Id = caixa_id;
@@ -83,6 +84,7 @@ namespace CheckVTR.Seguranca
         {
             return Apelido;
         }
+
         public static Caixa_Situacao GetCaixa_Situacao()
         {
             return Caixa;

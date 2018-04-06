@@ -20,12 +20,25 @@ namespace CheckVTR.Interface
         private List<Veiculo> veiculosB = new List<Veiculo>();
         private List<Item> item = new List<Item>();
         //private List<Item> item_checados = new List<Item>();
-
+        private Entity.Configuracao conf = new Entity.Configuracao();
         public CheckList()
         {
             InitializeComponent();
 
+            ConfiguracoesBLL BLL3 = new ConfiguracoesBLL();
+            conf = BLL3.Busca();
 
+            if (conf != null)
+            {
+                int qtd;
+                try { qtd = Convert.ToInt32(conf.QtdAreas); } catch { qtd = 1; }
+                for (int i = 1; i <= qtd; i++)
+                {
+                    comboArea.Items.Add(i);
+                }
+            }
+
+            
 
             OleoBLL BLL = new OleoBLL();
             veiculos = BLL.ListaVeiculos();

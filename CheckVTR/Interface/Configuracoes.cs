@@ -33,7 +33,7 @@ namespace CheckVTR.Interface
             {
                 foreach(DataRow linha in Ativos.Rows)
                 {
-                    string[] row = new string[] { linha.ItemArray[1].ToString(), linha.ItemArray[21].ToString(), linha.ItemArray[2].ToString(), linha.ItemArray[3].ToString(), linha.ItemArray[5].ToString(), };
+                    string[] row = new string[] { linha.ItemArray[1].ToString(), linha.ItemArray[8].ToString(), linha.ItemArray[2].ToString(), linha.ItemArray[3].ToString(), linha.ItemArray[5].ToString(), };
 
                     dataGridPlantao.Rows.Add(row);
                 }
