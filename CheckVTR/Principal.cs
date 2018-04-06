@@ -42,17 +42,6 @@ namespace CheckVTR
 
         }
 
-        //private void btnRecCartaoConvenio_Click(object sender, EventArgs e)
-        //{
-        //    decimal valor = CalculaRecebimento();
-        //    decimal txt = 0;
-        //    if (valor > 0)
-        //    {
-        //        try { txt = Convert.ToDecimal(txtRecCartaoConvenio.Text.Replace("R$", "").Trim()); } catch { txt = 0; }
-        //        valor += txt;
-        //        txtRecCartaoConvenio.Text = valor.ToString("C2");
-        //    }
-        //}
 
         private void LiberaAdmin()
         {
