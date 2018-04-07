@@ -53,5 +53,11 @@ namespace CheckVTR.Interface
 
 
         }
+
+        private void btnCompletoTeste_Click(object sender, EventArgs e)
+        {
+            //Rel_CheckList tela = new Rel_CheckList();
+            //tela.ShowDialog();
+        }
     }
 }

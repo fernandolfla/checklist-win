@@ -82,3 +82,4 @@ C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.exe
 C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.pdb
 C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.CadItens.resources
 C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.Interface.Configuracao.resources
+C:\Users\Fernando\Documents\GitHub\Checklist\CheckVTR\obj\Debug\CheckVTR.csproj.CopyComplete

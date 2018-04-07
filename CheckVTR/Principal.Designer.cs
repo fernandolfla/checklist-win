@@ -221,7 +221,6 @@
             this.btnCaixa.TabIndex = 10;
             this.btnCaixa.Text = "CAIXA";
             this.btnCaixa.UseVisualStyleBackColor = true;
-            this.btnCaixa.Visible = false;
             this.btnCaixa.Click += new System.EventHandler(this.btnCaixa_Click);
             // 
             // btnItens

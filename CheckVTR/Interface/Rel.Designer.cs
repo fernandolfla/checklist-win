@@ -41,7 +41,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnCompletoTeste = new System.Windows.Forms.Button();
             this.btnCheckCompleto = new System.Windows.Forms.Button();
             this.btnManutencao = new System.Windows.Forms.Button();
             this.btnTrocaOleo = new System.Windows.Forms.Button();
@@ -63,7 +63,7 @@
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.btnCompletoTeste);
             this.panel1.Controls.Add(this.btnCheckCompleto);
             this.panel1.Controls.Add(this.btnManutencao);
             this.panel1.Controls.Add(this.btnTrocaOleo);
@@ -183,15 +183,15 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Visible = false;
             // 
-            // button8
+            // btnCompletoTeste
             // 
-            this.button8.Location = new System.Drawing.Point(20, 100);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(110, 50);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "Relatório";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Visible = false;
+            this.btnCompletoTeste.Location = new System.Drawing.Point(20, 100);
+            this.btnCompletoTeste.Name = "btnCompletoTeste";
+            this.btnCompletoTeste.Size = new System.Drawing.Size(110, 50);
+            this.btnCompletoTeste.TabIndex = 4;
+            this.btnCompletoTeste.Text = "Relatório Completo Teste";
+            this.btnCompletoTeste.UseVisualStyleBackColor = true;
+            this.btnCompletoTeste.Click += new System.EventHandler(this.btnCompletoTeste_Click);
             // 
             // btnCheckCompleto
             // 
@@ -237,7 +237,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 362);
+            this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -267,7 +267,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnCompletoTeste;
         private System.Windows.Forms.Button btnCheckCompleto;
         private System.Windows.Forms.Button btnManutencao;
         private System.Windows.Forms.Button btnTrocaOleo;

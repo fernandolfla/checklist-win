@@ -17,26 +17,20 @@ namespace CheckVTR.Relatorios_Model
         public RelatorioCheckCompleto()
         {
             InitializeComponent();
-
-
-
-
-
-
         }
 
         private void btnOK_Click(object sender, EventArgs e)
         {
             DateTime inicio = dateInicio.Value.Date;
             DataTable data = new DataTable();
-            DataTable data2 = new DataTable();
+            //DataTable data2 = new DataTable();
 
             RelatoriosBLL BLL = new RelatoriosBLL();
 
 
             data = BLL.RelatorioChecklist(inicio);
 
-            data2 = BLL.RelatorioChecklist_Chaves(2);
+            //data2 = BLL.RelatorioChecklist_Chaves(2);
 
             if (data != null)
             {
@@ -47,11 +41,16 @@ namespace CheckVTR.Relatorios_Model
                     this.reportCheckCompleto.LocalReport.DataSources.Clear();
                     this.reportCheckCompleto.LocalReport.DataSources.Add(dsReport);
                     this.reportCheckCompleto.LocalReport.Refresh();
+                    
+
+                    this.reportCheckCompleto.LocalReport.SubreportProcessing += new SubreportProcessingEventHandler(SubreportEvento);
+
+                   
 
                     this.reportCheckCompleto.RefreshReport();
                 }
                 else
-                    MessageBox.Show("Não há Vendas no Intervalo Pesquisado");
+                    MessageBox.Show("Não há Checklist no Intervalo Pesquisado");
 
 
             }
@@ -61,5 +60,19 @@ namespace CheckVTR.Relatorios_Model
 
 
         }
+
+        public void SubreportEvento(object sender, SubreportProcessingEventArgs e)
+        {
+            DataTable data2 = new DataTable();
+            RelatoriosBLL BLL = new RelatoriosBLL();
+            int chaveId = int.Parse(e.Parameters["Id"].Values[0].ToString());
+            data2 = BLL.RelatorioChecklist_Chaves(chaveId);
+            if (data2 != null)
+                e.DataSources.Add(new ReportDataSource("DataSet_Sub", data2));
+        }
+
+
     }
+
+  
 }
